@@ -1,0 +1,46 @@
+
+    $header-height: 5rem;
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    $background-color: hsla(202.75, 66.81%, 44.9%, 1);
+    $background-color_2: hsl(204, 100%, 35%);
+    $black-color-light:hsl(220, 24%, 15%);
+    $black-color-lighten: hsl(220, 20%, 18%);
+    $first-color: hsl(220, 68%, 54%);
+    $first-color-lighten: hsl(220, 68%, 97%);
+    $title-color: hsl(220, 48%, 28%);
+    $text-color: hsl(220, 12%, 45%);
+    $body-color: hsl(220, 100%, 99%);
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    $body-font: "Poppins", sans-serif;
+    $normal-font-size: .938rem;
+    $small-font-size: .813rem;
+    $smaller-font-size: .75rem;
+    /*========== Font weight ==========*/
+    $font-medium: 500;
+    $font-semi-bold: 600;
+    /*========== z index ==========*/
+    $z-tooltip: 10;
+    $z-fixed: 100;
+
+    /*========== MIXINS ==========*/
+    @mixin titleText($titleSize){
+        font-size: $titleSize;
+        transform: capitalize;
+        color: $black-color-light;
+    }
+
+// //map-get() is use to get the specific value from the map element
+// @debug map-get($colors, "purple");
+
+// //map-has-key() is used to check if the map element contains the specified value.
+// @debug map-has-key($colors, "purple");
+
+// //map-remove() is used to remove the map element from the map
+// @debug map-remove($colors, "primary");
+
+// //map-merge() is use to merge another value with the current map element
+// @debug map-merge($colors, ("pink": #ffc0cb));\
+
+/* Color Theme Swatches in Hex */

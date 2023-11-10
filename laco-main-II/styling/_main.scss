@@ -34,11 +34,11 @@
 /*=============== HEADER ===============*/
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $background-color_2;
+  background: $background-color_2;
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
   z-index: $z-fixed;
 }
@@ -276,63 +276,72 @@
 .dropdown__sublink {
   background-color: var(--black-color-lighten);
 }
-
-/*=============== HOME ===============*/
-
-.home {
-  padding: 0;
-
-  .slide {
+/*=============== SWIPER ===============*/
+.swiper-wrapper{
+  margin-top: 5rem;
+.slide{
     display: flex;
-    align-items: center;
     height: 56rem;
+    align-items: center;
     background-size: cover !important;
     background-position: center !important;
 
-    .content {
+    .content{
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 15px;
       width: 50rem;
-      margin: 5rem;
 
-      h3 {
-        font-size: 4rem;
-        line-height: 1;
-        transform: $font-medium;
-        color: #fff;
-        font-weight: 700;
+      h3{
+        font-size: 5rem;
+        color: $body-color;
+        font-family: "raleway", sans-serif;
+        font-weight: 600;
       }
 
-      p {
+      p{
         font-size: 1rem;
         line-height: 1;
         color: #d9d9d9;
         padding: 1rem 0;
       }
 
-      span {
+      span{
         color: #3876bf;
         font-weight: 500;
       }
-      
+
       a{
         cursor: pointer;
       }
     }
-  }
+}
+
+}
+
+/*=============== SMALL ABOUT SECTION ===============*/
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  z-index: 9999;
 }
 
 /*=============== SMALL ABOUT SECTION ===============*/
 
 .about {
-  background-color: $black-color-light;
-  height: 100%;
+  background: $black-color-light;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+ 
   .section-container {
     display: flex;
     flex-wrap: wrap;
@@ -340,12 +349,12 @@
     align-items: center;
     width: 100%;
 
+
     .box {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      height: auto;
       width: 50%;
 
       .content_1 {
@@ -389,7 +398,7 @@
       }
     }
 
-    .container {
+    .containers {
       display: flex;
       flex-wrap: wrap;
       padding: 2rem;
@@ -443,7 +452,7 @@
 
 /*=============== Footer ===============*/
 .footer {
-  padding: 70px 15% 70px;
+  padding: 55px 10% 55px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   gap: 1rem;
@@ -512,35 +521,6 @@
   }
 }
 /*=============== BACKTOP ===============*/
-.back-to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #efefef;
-  border-radius: 0.5rem;
-  padding: 0.3;
-  cursor: pointer;
-  transition: 0.2s ease-out;
-
-  &:hover {
-    background-color: #002a40;
-  }
-
-  i {
-    color: #3876bf;
-    font-size: 2rem;
-    transition: 0.2s ease-out;
-
-    &:hover {
-      color: #fff;
-      transform: translateY(-3px);
-    }
-  }
-}
-
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 1690px) {
@@ -573,20 +553,15 @@
 }
 
 @media screen and (max-width: 768px) {
-  .home .slide .content h3 {
-    font-size: 2.5rem;
+.swiper-wrapper {
+  .slide{
+    height: 35rem;
   }
+}
 
-  .home .slide {
-    height: 25rem;
-
-    .content {
-      margin: 1.5rem;
-    }
-  }
-  .content_1 {
-    align-items: center;
-  }
+.swiper-wrapper .slide .content h3{
+  font-size: 3rem;
+}
 
   @media screen and (max-width: 700px) {
     .footer {

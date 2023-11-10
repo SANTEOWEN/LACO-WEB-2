@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap');
 ::-webkit-scrollbar{
     width: 5px;
 }
@@ -18,11 +18,13 @@
 body {
     font-family: $body-font;
     background-color: #F2F2F2;
-    width: 100%;
+    line-height: 1.5;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {

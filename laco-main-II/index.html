@@ -16,6 +16,8 @@
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--=============== Title ===============-->
     <title>La Consolacion College Novaliches</title>
 
 </head>
@@ -44,7 +46,7 @@
                     <li class="dropdown__item">
                         <div class="nav__link">
                             About<i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                            
+
                         </div>
 
                         <ul class="dropdown__menu">
@@ -101,30 +103,33 @@
             </div>
         </div>
     </header>
-    <!--=============== Home ===============-->
-    <section class="home" id="#top">
-        <div class="swiper home-slider">
-
+    <!--=============== Modal ===============-->
+    <dialog class="modal" id="modal">
+        <h2>Interesting title</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis id quasi ab.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores modi provident
+            dolore!</p>
+        <button class="btn closed">Close modal</button>
+    </dialog>
+    <!--=============== Slider ===============-->
+    <section class="slider-1">
+        <div class="swiper" id="swiper-1">
             <div class="swiper-wrapper">
-
                 <section class="swiper-slide slide" style="background: url('/assets/logo/mary_1.jpg') no-repeat;">
                     <div class="content">
                         <h3>Unitas Caritas Veritas</h3>
                         <p><span>La Consolacion College Novaliches</span> commits to provide transformative education
                             and to instill in all the members of the Community of Friends the passion for Peace, Justice
                             and Integrity of Creation.</p>
-                            <a href="courses.html" class="btn">Get Started</a>
+                        <button class="button open-button btn">Get Started!</button>
                     </div>
                 </section>
-
                 <section class="swiper-slide slide" style="background: url('/assets/school_photos/3.jpg') no-repeat;">
                     <div class="content">
-                        <h3>The Best courses you will find here</h3>
+                        <h3>The Best Courses You Will Find Here</h3>
                         <p>We Have a <span><a href="">Varity</a></span> of courses that you can choose.</p>
-                        
                     </div>
                 </section>
-
                 <section class="swiper-slide slide" style="background: url('/assets/logo/test_1.jpg') no-repeat;">
                     <div class="content">
                         <h3>We Evangelize</h3>
@@ -132,11 +137,8 @@
                     </div>
                 </section>
 
-
             </div>
-
             <div class="swiper-pagination"></div>
-
         </div>
     </section>
 
@@ -157,7 +159,7 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="containers">
                 <div class="slider-wrapper">
                     <div class="slider">
                         <img id="slide-1" src="/assets/school_photos/1.jpg" alt="">
@@ -217,9 +219,9 @@
         </div>
     </section>
 
-    <a href="#top" class="back-to-top">
+    <!-- <a href="#top" class="back-to-top">
         <i class="ri-arrow-drop-up-line"></i>
-    </a>
+    </a> -->
     <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

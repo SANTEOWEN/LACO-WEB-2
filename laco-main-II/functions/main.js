@@ -17,15 +17,25 @@ const showMenu = (toggleId, navId) => {
 showMenu('nav-toggle', 'nav-menu');
 
 /*========== SWIPER JS ==========*/
-var swiper = new Swiper(".home-slider", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+var swiper = new Swiper("#swiper-1", {
+    effect: "fade",
     loop: true,
     grabCursor: true,
-  });
+    pagination: {
+        el: "#swiper-1 .swiper-pagination",
+        clickable: true,
+    },
+})
+/*========== Modal ==========*/
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".closed");
 
-/*========== Carousel ==========*/
+openModal.addEventListener('click', () =>{
+    modal.showModal()
+});
 
+closeModal.addEventListener('click', () =>{
+    modal.close()
+});
 

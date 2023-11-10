@@ -379,9 +379,19 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: hsl(220, 68%, 97%);
   padding: 20px;
   z-index: 9999;
+  border-radius: 20px;
+  border: 3px solid #333;
+}
+.modal::backdrop {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.modal button {
+  background-color: hsl(220, 24%, 15%);
 }
 
 /*=============== SMALL ABOUT SECTION ===============*/

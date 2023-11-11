@@ -379,19 +379,98 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: hsl(220, 68%, 97%);
-  padding: 20px;
+  padding: 1em;
+  max-width: 50ch;
   z-index: 9999;
-  border-radius: 20px;
-  border: 3px solid #333;
+  border: 0;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+}
+.modal > * {
+  margin: 0 0 0.5rem 0;
 }
 .modal::backdrop {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-.modal button {
-  background-color: hsl(220, 24%, 15%);
+.modal .close i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0 5px 0 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.modal .content {
+  min-width: 350px;
+  max-height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.modal .content .main-content {
+  position: absolute;
+  margin-top: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal .content .main-content h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+}
+.modal .content .main-content p {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(131, 131, 131);
+}
+.modal .content .main-content span {
+  color: #fff;
+}
+.modal .content .buttons-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  padding: 10px;
+  margin-top: 85px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal .content .buttons-container .btn {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+  background-color: #274c8e;
+  border-radius: 50px;
+}
+.modal .content .buttons-container .btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.modal .content .buttons-container .btn:hover {
+  background-color: #006bb3;
+  color: #333;
+  border-color: #fff;
+  transform: scale(110%);
 }
 
 /*=============== SMALL ABOUT SECTION ===============*/

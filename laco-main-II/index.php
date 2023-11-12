@@ -129,7 +129,7 @@
     <section class="slider-1">
         <div class="swiper" id="swiper-1">
             <div class="swiper-wrapper">
-                <section class="swiper-slide slide" style="background: url('/assets/logo/mary_1.jpg') no-repeat;">
+                <section class="swiper-slide slide" style="background: url('assets/logo/mary_1.jpg') no-repeat;">
                     <div class="content">
                         <h3>Unitas Caritas Veritas</h3>
                         <p><span>La Consolacion College Novaliches</span> commits to provide transformative education
@@ -138,13 +138,13 @@
                         <button class="button open-button btn">Get Started!</button>
                     </div>
                 </section>
-                <section class="swiper-slide slide" style="background: url('/assets/school_photos/3.jpg') no-repeat;">
+                <section class="swiper-slide slide" style="background: url('assets/school_photos/3.jpg') no-repeat;">
                     <div class="content">
                         <h3>The Best Courses You Will Find Here</h3>
                         <p>We Have a <span><a href="">Varity</a></span> of courses that you can choose.</p>
                     </div>
                 </section>
-                <section class="swiper-slide slide" style="background: url('/assets/logo/test_1.jpg') no-repeat;">
+                <section class="swiper-slide slide" style="background: url('assets/logo/test_1.jpg') no-repeat;">
                     <div class="content">
                         <h3>We Evangelize</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
@@ -176,10 +176,10 @@
             <div class="containers">
                 <div class="slider-wrapper">
                     <div class="slider">
-                        <img id="slide-1" src="/assets/school_photos/1.jpg" alt="">
-                        <img id="slide-2" src="/assets/school_photos/2.jpg" alt="">
-                        <img id="slide-3" src="/assets/school_photos/4.jpg" alt="">
-                        <img id="slide-4" src="/assets/school_photos/5.jpg" alt="">
+                        <img id="slide-1" src="assets/school_photos/1.jpg" alt="">
+                        <img id="slide-2" src="assets/school_photos/2.jpg" alt="">
+                        <img id="slide-3" src="assets/school_photos/4.jpg" alt="">
+                        <img id="slide-4" src="assets/school_photos/5.jpg" alt="">
                     </div>
                     <div class="slider-nav">
                         <a href="#slide-1"></a>
@@ -217,7 +217,7 @@
             <li><a href="#">Terms of Use</a></li>
         </div>
         <div class="footer-content">
-            <h4>Usefull links</h4>
+            <h4>Useful links</h4>
             <li><a href="#">Ask Questions</a></li>
             <li><a href="#">Send Feedback</a></li>
             <li><a href="#">Private Policy</a></li>

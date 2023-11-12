@@ -350,7 +350,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 15px;
+  margin-left: 100px;
   width: 50rem;
 }
 .swiper-wrapper .slide .content h3 {
@@ -373,7 +373,7 @@ a {
   cursor: pointer;
 }
 
-/*=============== SMALL ABOUT SECTION ===============*/
+/*=============== MODAL ===============*/
 .modal {
   position: fixed;
   top: 50%;
@@ -578,7 +578,7 @@ a {
 
 /*=============== Footer ===============*/
 .footer {
-  padding: 55px 10% 55px;
+  padding: 55px 20% 55px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   gap: 1rem;
@@ -598,23 +598,31 @@ a {
 }
 .footer .footer-content h4 {
   color: #fff;
-  margin-bottom: 1.5rem;
   font-size: 30px;
   font-weight: 600;
 }
 .footer .footer-content li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .footer .footer-content li a {
   display: block;
-  color: #d6d6d6;
+  color: #dbe4e6;
   font-size: 15px;
   font-weight: 400;
   transition: all 0.4s ease;
 }
 .footer .footer-content li a:hover {
-  transform: translateY(-3px) translate(-5px);
   color: #fff;
+}
+.footer .footer-content p {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 5px;
+  color: #d9d9d9;
+}
+.footer .footer-content p i {
+  font-size: 20px;
 }
 .footer .footer-content .text-content {
   display: flex;
@@ -627,14 +635,19 @@ a {
   font-size: 16px;
   line-height: 30px;
 }
-.footer .icons a {
+.footer .footer-content .contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .icons i {
   display: inline-block;
   font-size: 50px;
   color: #d6d6d6;
   margin-right: 17px;
   transition: all 0.4s ease;
 }
-.footer .icons a:hover {
+.footer .icons i:hover {
   color: #fff;
   transform: translateY(-3px);
 }
@@ -652,6 +665,13 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 2rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
   }
 }
 @media screen and (max-width: 340px) {
@@ -677,7 +697,7 @@ a {
 @media screen and (max-width: 768px) and (max-width: 700px) {
   .footer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 2.5rem;
   }
   .footer .icons {
@@ -689,6 +709,9 @@ a {
   .footer .footer-content h4 {
     font-size: 30px;
     font-weight: 700;
+  }
+  .footer .contact-us {
+    align-items: center;
   }
 }
 /* For large devices */

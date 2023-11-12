@@ -108,7 +108,7 @@
     <dialog class="modal" id="modal">
         <div class="close"><i class="ri-close-line closed"></i></div>
         <div class="content">
-            
+
             <div class="main-content">
                 <h2>Authorize which Account</h2>
                 <p>Choose what type of <span> account </span> you have</p>
@@ -120,7 +120,7 @@
                 <div class="btn"><a href="#">ADMIN</a></div>
             </div>
 
-                <p></p>
+            <p></p>
 
         </div>
     </dialog>
@@ -202,37 +202,36 @@
                 <p>We provide transformative education and to instill in all the members of the Community of Friends the
                     passion for Peace, Justice and Integrity of Creation.</p>
             </div>
-            <div class="icons">
-                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                <a href="#"><i class="ri-youtube-fill"></i></a>
-                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="#"><i class="ri-youtube-fill"></i></a>
+        </div>
+        <div class="footer-content">
+            <div class="contact-us">
+                <h4>Contact Us</h4>
+                <li>
+                    <p><i class="ri-facebook-box-fill"></i><a href="https://www.facebook.com/LCCDeparoNovaliches/">La
+                            Consolacion College Novaliches</a></p>
+                </li>
+                <li>
+                    <p><i class="ri-mail-fill"></i>lacoco_rdo@yahoo.com.ph</p>
+                </li>
+                <li>
+                    <p><i class="ri-smartphone-fill"></i>0966-549-4493</p>
+                </li>
+                <li>
+                    <p><i class="ri-phone-fill"></i>8287-1013 / 8289-6156</p>
+                </li>
             </div>
         </div>
+
+
         <div class="footer-content">
             <h4>Quick Links</h4>
-            <li><a href="#">Program Offerings</a></li>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Requirement</a></li>
-            <li><a href="#">Terms of Use</a></li>
-        </div>
-        <div class="footer-content">
-            <h4>Useful links</h4>
             <li><a href="#">Ask Questions</a></li>
             <li><a href="#">Send Feedback</a></li>
             <li><a href="#">Private Policy</a></li>
             <li><a href="#">Terms of Use</a></li>
         </div>
 
-        <div class="footer-content">
-            <h4>Contact Us</h4>
-            <li><a href="#">Ask Questions</a></li>
-            <li><a href="#">Send Feedback</a></li>
-            <li><a href="#">Private Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-        </div>
     </section>
-
     <!-- <a href="#top" class="back-to-top">
         <i class="ri-arrow-drop-up-line"></i>
     </a> -->

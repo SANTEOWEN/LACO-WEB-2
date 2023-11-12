@@ -290,7 +290,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      margin: 15px;
+      margin-left: 100px;
       width: 50rem;
 
       h3{
@@ -320,7 +320,7 @@
 
 }
 
-/*=============== SMALL ABOUT SECTION ===============*/
+/*=============== MODAL ===============*/
 
 .modal {
   position: fixed;
@@ -555,7 +555,7 @@
 
 /*=============== Footer ===============*/
 .footer {
-  padding: 55px 10% 55px;
+  padding: 55px 20% 55px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   gap: 1rem;
@@ -572,29 +572,41 @@
       max-width: 250px;
       height: auto;
     }
-    h4 {
+    h4{
       color: #fff;
-      margin-bottom: 1.5rem;
       font-size: 30px;
       font-weight: 600;
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
 
       a {
         display: block;
-        color: #d6d6d6;
+        color: #dbe4e6;
         font-size: 15px;
         font-weight: 400;
         transition: all 0.4s ease;
 
         &:hover {
-          transform: translateY(-3px) translate(-5px);
           color: #fff;
         }
       }
     }
+
+    
+    p{
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      gap: 5px;
+      color: #d9d9d9;
+      i{
+        font-size: 20px;
+
+      }
+    }
+    
 
     .text-content {
       display: flex;
@@ -608,9 +620,14 @@
         line-height: 30px;
       }
     }
+    .contact-us{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
-  .icons a {
+  .icons i {
     display: inline-block;
     font-size: 50px;
     color: #d6d6d6;
@@ -637,6 +654,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
   }
 }
 
@@ -669,7 +694,7 @@
   @media screen and (max-width: 700px) {
     .footer {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+      grid-template-columns: repeat(auto-fit, minmax(180px, auto));
       gap: 2.5rem;
 
       .icons {
@@ -682,6 +707,10 @@
           font-size: 30px;
           font-weight: 700;
         }
+      }
+
+      .contact-us{
+        align-items: center;
       }
     }
   }

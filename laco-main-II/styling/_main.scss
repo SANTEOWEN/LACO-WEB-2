@@ -555,9 +555,10 @@
 
 /*=============== Footer ===============*/
 .footer {
-  padding: 55px 20% 55px;
+
+  padding: 55px 25% 55px 25%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 1rem;
   background-color: $background-color_2;
   position: absolute;
@@ -592,6 +593,8 @@
           color: #fff;
         }
       }
+
+      
     }
 
     
@@ -601,6 +604,7 @@
       font-size: 15px;
       gap: 5px;
       color: #d9d9d9;
+
       i{
         font-size: 20px;
 
@@ -720,6 +724,11 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, auto));
       gap: 2.5rem;
+
+      .text-content{
+        align-items: center;
+        justify-content: center;
+      }
 
       .icons {
         font-size: 50px;

@@ -579,9 +579,9 @@ a {
 
 /*=============== Footer ===============*/
 .footer {
-  padding: 55px 20% 55px;
+  padding: 55px 25% 55px 25%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 1rem;
   background-color: hsl(204, 100%, 35%);
   position: absolute;
@@ -723,6 +723,10 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 2.5rem;
+  }
+  .footer .text-content {
+    align-items: center;
+    justify-content: center;
   }
   .footer .icons {
     font-size: 50px;

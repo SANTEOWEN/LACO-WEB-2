@@ -197,12 +197,13 @@
     <!--=============== Footer ===============-->
     <section class="footer">
         <div class="footer-content">
-            <img src="assets/school_photos/peac_lccn.png" alt="">
-            <div class="text-content">
-                <p>We provide transformative education and to instill in all the members of the Community of Friends the
-                    passion for Peace, Justice and Integrity of Creation.</p>
-            </div>
+            <h4>Quick Links</h4>
+            <li><a href="#">Ask Questions</a></li>
+            <li><a href="#">Send Feedback</a></li>
+            <li><a href="#">Private Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
         </div>
+
         <div class="footer-content">
             <div class="contact-us">
                 <h4>Contact Us</h4>
@@ -222,15 +223,12 @@
             </div>
         </div>
 
-
         <div class="footer-content">
-            <h4>Quick Links</h4>
-            <li><a href="#">Ask Questions</a></li>
-            <li><a href="#">Send Feedback</a></li>
-            <li><a href="#">Private Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <img src="assets/logo/main.png" alt="">
+            <div class="text-content">
+                <p class="copyright"><i class="ri-copyright-line"></i>All rights reserved</p>
+            </div>
         </div>
-
     </section>
     <a href="#top" class="back-to-top">
         <i class="ri-arrow-drop-up-line"></i>

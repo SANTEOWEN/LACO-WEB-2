@@ -641,6 +641,30 @@
   }
 }
 /*=============== BACKTOP ===============*/
+.back-to-top{
+  background-color: #d9d9d9;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-out;
+  border-radius: 15px;
+
+  i{
+    font-size: 60px;
+    color: $background-color_2;
+    transition: 0.2s ease-out;
+    
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 1690px) {

@@ -60,7 +60,8 @@ textarea {
   margin: 0;
 }
 
-body {
+html, body {
+  scroll-behavior: smooth !important;
   font-family: "Poppins", sans-serif;
   background-color: #F2F2F2;
   line-height: 1.5;
@@ -653,6 +654,29 @@ a {
 }
 
 /*=============== BACKTOP ===============*/
+.back-to-top {
+  background-color: #d9d9d9;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-out;
+  border-radius: 15px;
+}
+.back-to-top i {
+  font-size: 60px;
+  color: hsl(204, 100%, 35%);
+  transition: 0.2s ease-out;
+}
+.back-to-top i:hover {
+  transform: translateY(-4px);
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 1690px) {

@@ -197,7 +197,7 @@
     <!--=============== Footer ===============-->
     <section class="footer">
         <div class="footer-content">
-            <img src="assets/logo/main.png" alt="">
+            <img src="assets/school_photos/peac_lccn.png" alt="">
             <div class="text-content">
                 <p>We provide transformative education and to instill in all the members of the Community of Friends the
                     passion for Peace, Justice and Integrity of Creation.</p>
@@ -232,9 +232,9 @@
         </div>
 
     </section>
-    <!-- <a href="#top" class="back-to-top">
+    <a href="#top" class="back-to-top">
         <i class="ri-arrow-drop-up-line"></i>
-    </a> -->
+    </a>
     <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

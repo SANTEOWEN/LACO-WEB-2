@@ -7,7 +7,7 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 .container {
-  max-width: 1200px;
+  max-width: 1725px;
   margin-inline: 1.5rem;
 }
 
@@ -61,6 +61,7 @@
   align-items: center;
   width: 250px;
   height: auto;
+
 }
 
 .nav__toggle {
@@ -712,6 +713,11 @@
 .swiper-wrapper {
   .slide{
     height: 35rem;
+  }
+
+  .content{
+    margin: 0;
+    max-width: 20rem;
   }
 }
 

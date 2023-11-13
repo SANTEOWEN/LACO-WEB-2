@@ -27,8 +27,9 @@
     <header class="header">
         <div class="nav container">
             <div class="nav__data">
-                <a href="" class="nav__logo"><img src="assets/logo/main.png" alt=""></a>
-
+                <div class="main-logo">
+                <a href="#" class="nav__logo"><img src="assets/logo/main.png" alt=""></a>
+                </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-line nav__burger"></i>
                     <i class="ri-close-line nav__close"></i>
@@ -141,7 +142,7 @@
                 <section class="swiper-slide slide" style="background: url('assets/school_photos/3.jpg') no-repeat;">
                     <div class="content">
                         <h3>The Best Courses You Will Find Here</h3>
-                        <p>We Have a <span><a href="">Varity</a></span> of courses that you can choose.</p>
+                        <p>We Have a <span><a href="">Variety</a></span> of courses that you can choose.</p>
                     </div>
                 </section>
                 <section class="swiper-slide slide" style="background: url('assets/logo/test_1.jpg') no-repeat;">
@@ -163,10 +164,8 @@
 
             <div class="box">
                 <div class="content_1">
-                    <h1>Hi We Welcome You!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, temporibus vel similique onsectetur
-                        adipisicing elit. Ex, temporibus vel similiqueonsectetur adipisicing elit. Ex, temporibus vel
-                        similique</p>
+                    <h1>Hello and Welcome!</h1>
+                    <p>Where curiosity meets opportunity, and every student is set on a path to excel. We're thrilled to have you </p>
                     <div class="button-container">
                         <a href="#">Our History</a>
                     </div>
@@ -224,7 +223,7 @@
         </div>
 
         <div class="footer-content">
-            <img src="assets/logo/main.png" alt="">
+            <img src="assets/school_photos/main-2.png" alt="">
             <div class="text-content">
                 <p class="copyright"><i class="ri-copyright-line"></i>All rights reserved</p>
             </div>

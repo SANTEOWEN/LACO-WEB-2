@@ -89,7 +89,7 @@ a {
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1200px;
+  max-width: 1725px;
   margin-inline: 1.5rem;
 }
 
@@ -713,6 +713,10 @@ a {
 @media screen and (max-width: 768px) {
   .swiper-wrapper .slide {
     height: 35rem;
+  }
+  .swiper-wrapper .content {
+    margin: 0;
+    max-width: 20rem;
   }
   .swiper-wrapper .slide .content h3 {
     font-size: 3rem;

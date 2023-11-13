@@ -287,18 +287,21 @@
     background-size: cover !important;
     background-position: center !important;
 
-    .content{
-      display: flex;
-      flex-direction: column;
+    .content_2{
+      display: flex; 
       flex-wrap: wrap;
-      margin-left: 100px;
-      width: 50rem;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 40px;
+      max-width: 58rem;
+     
 
       h3{
         font-size: 5rem;
         color: $body-color;
         font-family: "raleway", sans-serif;
         font-weight: 600;
+        text-align: justify;
       }
 
       p{
@@ -466,6 +469,7 @@
         flex-direction: column;
         color: #fff;
         margin: 50px;
+        
         h1 {
           line-height: 1.5;
           font-size: 4.5rem;
@@ -707,22 +711,35 @@
     align-items: center;
     overflow: hidden;
   }
+
 }
 
 @media screen and (max-width: 768px) {
-.swiper-wrapper {
-  .slide{
-    height: 35rem;
+  .swiper-wrapper .slide{
+    height: 37rem;
   }
 
-  .content{
-    margin: 0;
-    max-width: 20rem;
-  }
+.swiper-wrapper .slide .content_2
+{
+  text-align: center;
+  align-items: center;
+  margin: 0;
+}
+.swiper-wrapper .slide .content_2 h3 {
+  font-size: 2.2rem;
 }
 
-.swiper-wrapper .slide .content h3{
-  font-size: 3rem;
+.about .section-container .box .content_1 {
+  align-items: center;
+}
+
+.about .section-container .box .content_1 h1{
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.about .section-container .box .content_1 p{
+  text-align: center;
 }
 
   @media screen and (max-width: 700px) {

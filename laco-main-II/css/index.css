@@ -347,30 +347,32 @@ a {
   background-size: cover !important;
   background-position: center !important;
 }
-.swiper-wrapper .slide .content {
+.swiper-wrapper .slide .content_2 {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 100px;
-  width: 50rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  max-width: 58rem;
 }
-.swiper-wrapper .slide .content h3 {
+.swiper-wrapper .slide .content_2 h3 {
   font-size: 5rem;
   color: hsl(220, 100%, 99%);
   font-family: "raleway", sans-serif;
   font-weight: 600;
+  text-align: justify;
 }
-.swiper-wrapper .slide .content p {
+.swiper-wrapper .slide .content_2 p {
   font-size: 1rem;
   line-height: 1;
   color: #d9d9d9;
   padding: 1rem 0;
 }
-.swiper-wrapper .slide .content span {
+.swiper-wrapper .slide .content_2 span {
   color: #3876bf;
   font-weight: 500;
 }
-.swiper-wrapper .slide .content a {
+.swiper-wrapper .slide .content_2 a {
   cursor: pointer;
 }
 
@@ -712,14 +714,25 @@ a {
 }
 @media screen and (max-width: 768px) {
   .swiper-wrapper .slide {
-    height: 35rem;
+    height: 37rem;
   }
-  .swiper-wrapper .content {
+  .swiper-wrapper .slide .content_2 {
+    text-align: center;
+    align-items: center;
     margin: 0;
-    max-width: 20rem;
   }
-  .swiper-wrapper .slide .content h3 {
-    font-size: 3rem;
+  .swiper-wrapper .slide .content_2 h3 {
+    font-size: 2.2rem;
+  }
+  .about .section-container .box .content_1 {
+    align-items: center;
+  }
+  .about .section-container .box .content_1 h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .about .section-container .box .content_1 p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 700px) {

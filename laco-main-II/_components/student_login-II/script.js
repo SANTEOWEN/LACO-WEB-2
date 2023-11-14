@@ -4,6 +4,12 @@ const container = document.querySelector(".container"),
   signUp = document.querySelector(".signup-link"),
   logIn = document.querySelector(".login-link");
 
+const birtdate = [
+  'month, " "',
+  'day, " "'
+]
+
+
 pwShowHide.forEach((eyeIcon) => {
   eyeIcon.addEventListener("click", () => {
     pwFields.forEach((pwField) => {
@@ -33,4 +39,3 @@ signUp.addEventListener("click", () => {
 logIn.addEventListener("click", () => {
   container.classList.remove("active");
 });
-

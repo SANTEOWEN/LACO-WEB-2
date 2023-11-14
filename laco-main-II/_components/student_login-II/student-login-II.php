@@ -65,8 +65,7 @@
                 <div class="logo">
                     <img src="main.png" alt="">
                 </div>
-
-
+                
                 <form action="#">
                     <div class="input-field">
                         <input type="text" placeholder="Last name" name="" id="" required>
@@ -84,7 +83,7 @@
                     </div>
 
                     <div class="input-field">
-                        <input type="date" placeholder="Birthday" name="" id="" required>
+                        <input type="date" placeholder="Date of Birthday" name="" id="" required>
                         <i class="uil uil-calender"></i>
                     </div>
 

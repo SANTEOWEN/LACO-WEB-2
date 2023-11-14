@@ -109,10 +109,6 @@
     <dialog class="modal" id="modal">
         <div class="close"><i class="ri-close-line closed"></i></div>
 
-        <div class="logo">
-            <img src="assets/school_photos/main-2.png" alt="">
-        </div>
-
         <div class="content">
             <div class="main-content">
                 <h2>Authorize which Account</h2>
@@ -234,6 +230,7 @@
             </div>
         </div>
     </section>
+    
     <a href="#top" class="back-to-top">
         <i class="ri-arrow-drop-up-line"></i>
     </a>

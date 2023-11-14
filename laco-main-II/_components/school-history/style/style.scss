@@ -1,0 +1,430 @@
+/*=============== Variables ===============*/
+$header-height: 5rem;
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+$background-color: hsla(202.75, 66.81%, 44.9%, 1);
+$background-color_2: hsl(204, 100%, 35%);
+$black-color-light: hsl(220, 24%, 15%);
+$black-color-lighten: hsl(220, 20%, 18%);
+$first-color: hsl(220, 68%, 54%);
+$first-color-lighten: hsl(220, 68%, 97%);
+$title-color: hsl(220, 48%, 28%);
+$text-color: hsl(220, 12%, 45%);
+$body-color: hsl(220, 100%, 99%);
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+$body-font: "Poppins", sans-serif;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+/*========== Font weight ==========*/
+$font-medium: 500;
+$font-semi-bold: 600;
+/*========== z index ==========*/
+$z-tooltip: 10;
+$z-fixed: 200;
+
+/*=============== BASE ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap");
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $background-color_2;
+  border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  scroll-behavior: smooth !important;
+  font-family: $body-font;
+  background-color: $black-color-lighten;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1725px;
+  margin-inline: 1.5rem;
+}
+
+/*=============== HEADER ===============*/
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $background-color_2;
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
+  z-index: 1;
+}
+
+/*=============== NAV ===============*/
+
+.nav {
+  height: $header-height;
+}
+
+.nav__data {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  width: 250px;
+  height: auto;
+}
+
+.nav__toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav__burger {
+  color: #efefef;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
+}
+
+.nav__close {
+  color: #efefef;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
+  opacity: 0;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1118px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  .nav__list {
+    background-color: $background-color;
+    padding: 1rem;
+  }
+}
+
+.nav__link {
+  color: #fff;
+  font-weight: $font-medium;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: $black-color-light;
+  }
+}
+
+/* Show menu */
+
+.show-menu {
+  opacity: 1;
+  top: 5rem;
+  pointer-events: initial;
+}
+
+/* Show icon */
+
+.show-icon {
+  .nav__burger {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  .nav__close {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+}
+
+/*=============== DROPDOWN ===============*/
+
+.dropdown__item {
+  cursor: pointer;
+}
+
+.dropdown__arrow {
+  font-size: 1.25rem;
+  font-weight: initial;
+  transition: transform 0.4s;
+}
+
+.dropdown__link,
+.dropdown__sublink {
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  color: #efefef;
+  background-color: #3876bf;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+
+  p {
+    letter-spacing: -1px;
+  }
+}
+
+.dropdown__link i,
+.dropdown__sublink i {
+  font-size: 1.25rem;
+  font-weight: initial;
+}
+
+.dropdown__link:hover,
+.dropdown__sublink:hover {
+  background-color: #fff;
+  color: $black-color-light;
+}
+
+.dropdown__menu,
+.dropdown__submenu {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Show dropdown menu & submenu */
+
+.dropdown__item:hover .dropdown__menu,
+.dropdown__subitem:hover > .dropdown__submenu {
+  max-height: 1000px;
+}
+
+/* Rotate dropdown icon */
+
+.dropdown__item:hover .dropdown__arrow {
+  transform: rotate(180deg);
+}
+
+/*=============== DROPDOWN SUBMENU ===============*/
+
+.dropdown__add {
+  margin-left: auto;
+}
+
+.dropdown__sublink {
+  background-color: var(--black-color-lighten);
+}
+
+/*=============== TIMELINE BITCH ===============*/
+
+.timeline{
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    content: "";
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  @media only screen and (max-width : 767px){
+    .timeline::before{
+      left: 40px;
+    }
+
+    .timeline-item{
+      padding: 40px 0;
+      opacity: 0.3;
+      filter: blur(2px);
+      transition: 0.5s;
+      width: calc(50% - 40px);
+      display: flex;
+      position: relative;
+      transform: translateY(-80px);
+
+      &::before{
+        content: attr(data-text);
+        letter-spacing: 3px;
+        width: 100%;
+        position: absolute;
+        color: rgba(255, 255,255,0.5);
+        font-size: 13px;
+        
+      }
+    }
+
+  }
+
+  .timeline__content-title{
+    font-weight: normal;
+    font-size: 66px;
+    margin: -10px 0 0 0;
+    transition: 0.4s;
+    padding: 0 10px;
+    color: #fff;
+  }
+
+  .timeline__content-desc{
+    margin: 0;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: normal;
+    line-height: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*=============== Nav section start ===============*/
+/* For large devices */
+@media screen and (min-width: 1118px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .nav {
+    height: calc(var($header-height) + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  .nav__link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: 0.25rem;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .dropdown__item,
+  .dropdown__subitem {
+    position: relative;
+  }
+
+  .dropdown__menu,
+  .dropdown__submenu {
+    max-height: initial;
+    overflow: initial;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .dropdown__link,
+  .dropdown__sublink {
+    padding-inline: 1rem 3.5rem;
+  }
+
+  .dropdown__subitem .dropdown__link {
+    padding-inline: 1rem;
+  }
+
+  .dropdown__submenu {
+    position: absolute;
+    left: 100%;
+    top: 0.5rem;
+  }
+
+  /* Show dropdown menu */
+
+  .dropdown__item:hover .dropdown__menu {
+    opacity: 1;
+    top: 5rem;
+    pointer-events: initial;
+  }
+
+  /* Show dropdown submenu */
+
+  .dropdown__subitem:hover > .dropdown__submenu {
+    opacity: 1;
+    top: 0;
+    pointer-events: initial;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .nav__link {
+    padding-inline: 1rem;
+  }
+}
+/*=============== Nav section start ===============*/

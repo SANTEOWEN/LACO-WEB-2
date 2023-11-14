@@ -133,57 +133,6 @@
   }
 }
 
-.sign-container {
-  cursor: pointer;
-  display: flex;
-  width: 100%;
-  height: 5rem;
-  align-items: center;
-  justify-content: space-around;
-  gap: 25px;
-
-  .btn41-43 {
-    padding: 10px 25px;
-    border-radius: 5px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    background: transparent;
-    outline: none !important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-  }
-
-  .btn-43 {
-    border: 1px solid rgb(255, 255, 255);
-    z-index: 1;
-    color: white;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 0;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      background: rgb(255, 255, 255);
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      color: rgb(0, 0, 0);
-    }
-
-    &:hover::after {
-      top: auto;
-      bottom: 0;
-      height: 100%;
-    }
-  }
-}
-
 /* Show menu */
 
 .show-menu {
@@ -274,6 +223,8 @@
 .dropdown__sublink {
   background-color: var(--black-color-lighten);
 }
+
+
 /*=============== SWIPER ===============*/
 .swiper-wrapper {
   margin-top: 5rem;
@@ -348,12 +299,6 @@
     -webkit-backdrop-filter: blur(10px);
   }
 
-  .logo {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    margin-bottom: 20px;
-  }
 
   .close i {
     position: absolute;
@@ -642,6 +587,7 @@
     }
   }
 }
+
 /*=============== BACKTOP ===============*/
 .back-to-top {
   background-color: #d9d9d9;
@@ -667,8 +613,11 @@
     }
   }
 }
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+
+/*=============== Footer media query start ===============*/
 @media screen and (max-width: 1690px) {
   .footer {
     padding: 50px 5% 40px;
@@ -691,21 +640,37 @@
   }
 }
 
-@media screen and (max-width: 340px) {
-  .container {
-    margin-inline: 1rem;
-  }
+@media screen and (max-width: 700px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 2.5rem;
 
-  .nav__link {
-    padding-inline: 1rem;
-  }
+    .text-content {
+      align-items: center;
+      justify-content: center;
+    }
 
-  .content_1 {
-    align-items: center;
-    overflow: hidden;
+    .icons {
+      font-size: 50px;
+    }
+
+    .footer-content {
+      text-align: center;
+      h4 {
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+
+    .contact-us {
+      align-items: center;
+    }
   }
 }
+/*=============== Footer media query end ===============*/
 
+/*=============== Swiper section start ===============*/
 @media screen and (max-width: 768px) {
   .swiper-wrapper .slide {
     height: 37rem;
@@ -733,35 +698,13 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 700px) {
-    .footer {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-      gap: 2.5rem;
-
-      .text-content {
-        align-items: center;
-        justify-content: center;
-      }
-
-      .icons {
-        font-size: 50px;
-      }
-
-      .footer-content {
-        text-align: center;
-        h4 {
-          font-size: 30px;
-          font-weight: 700;
-        }
-      }
-
-      .contact-us {
-        align-items: center;
-      }
-    }
-  }
 }
+/*=============== Swiper section end ===============*/
+
+
+
+
+/*=============== Nav section start ===============*/
 /* For large devices */
 @media screen and (min-width: 1118px) {
   .container {
@@ -842,3 +785,15 @@
     pointer-events: initial;
   }
 }
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .nav__link {
+    padding-inline: 1rem;
+  }
+}
+
+/*=============== Nav section start ===============*/

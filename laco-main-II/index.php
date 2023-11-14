@@ -117,7 +117,7 @@
 
             <div class="buttons-container">
                 <div class="btn"><a href="#">TEACHER</a></div>
-                <div class="btn"><a href="_components/student-login/student-login.php">STUDENT</a></div>
+                <div class="btn"><a href="_components/student_login-II/student-login-II.php">STUDENT</a></div>
                 <div class="btn"><a href="#">ADMIN</a></div>
             </div>
 

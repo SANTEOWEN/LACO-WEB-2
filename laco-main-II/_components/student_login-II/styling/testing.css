@@ -25,9 +25,35 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.container .signup {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.container.active .login {
+  margin-left: -50%;
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.container.active .signup {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.container.active .forms {
+  height: 845px;
+}
+.container .forms {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 440px;
+  transition: height 0.2s ease;
 }
 .container .form {
+  width: 50%;
   padding: 30px;
+  transition: margin-left 0.18s ease;
 }
 .container .form .logo img {
   display: block;
@@ -83,6 +109,8 @@ body {
 }
 .container .form .input-field i.showHide {
   right: 0;
+  cursor: pointer;
+  padding: 10px;
 }
 .container .form .checkbox-text {
   display: flex;
@@ -103,7 +131,7 @@ body {
   text-decoration: underline;
 }
 .container .form .button {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 .container .form .button input {
   border: none;
@@ -120,5 +148,6 @@ body {
   background-color: #265df2;
 }
 .container .form .login-sign-up {
-  margin-top: 5px;
+  margin-top: 20px;
+  text-align: center;
 }/*# sourceMappingURL=testing.css.map */

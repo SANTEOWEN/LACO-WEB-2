@@ -28,7 +28,7 @@
         <div class="nav container">
             <div class="nav__data">
                 <div class="main-logo">
-                <a href="#" class="nav__logo"><img src="assets/logo/main.png" alt=""></a>
+                    <a href="#" class="nav__logo"><img src="assets/logo/main.png" alt=""></a>
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-line nav__burger"></i>
@@ -41,7 +41,7 @@
                 <ul class="nav__list">
 
                     <li><a href="" class="nav__link">Home</a></li>
-
+                    <li><a href="" class="nav__link">Events</a></li>   
                     <!--=============== DROPDOWN 1 ===============-->
 
                     <li class="dropdown__item">
@@ -108,11 +108,15 @@
     <!--=============== Modal ===============-->
     <dialog class="modal" id="modal">
         <div class="close"><i class="ri-close-line closed"></i></div>
-        <div class="content">
 
+        <div class="logo">
+            <img src="assets/school_photos/main-2.png" alt="">
+        </div>
+
+        <div class="content">
             <div class="main-content">
                 <h2>Authorize which Account</h2>
-                <p>Choose what type of <span> account </span> you have</p>
+                <p>Choose what type of <span> Account </span> you have.</p>
             </div>
 
             <div class="buttons-container">
@@ -165,7 +169,8 @@
             <div class="box">
                 <div class="content_1">
                     <h1>Hello and Welcome!</h1>
-                    <p>Where curiosity meets opportunity, and every student is set on a path to excel. We're thrilled to have you </p>
+                    <p>Where curiosity meets opportunity, and every student is set on a path to excel. We're thrilled to
+                        have you </p>
                     <div class="button-container">
                         <a href="#">Our History</a>
                     </div>

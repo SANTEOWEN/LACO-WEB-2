@@ -5,11 +5,11 @@
 /*========== Font weight ==========*/
 /*========== z index ==========*/
 /*========== MIXINS ==========*/
-/* Color Theme Swatches in Hex */
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Rochester&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Rochester&display=swap");
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
   all: unset;
   display: revert;
@@ -63,7 +63,10 @@ textarea {
 html, body {
   scroll-behavior: smooth !important;
   font-family: "Poppins", sans-serif;
-  background-color: #F2F2F2;
+  background: url(/assets/school_photos/blob-scatter-haikei_3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   line-height: 1.5;
 }
 
@@ -312,8 +315,8 @@ a {
 .swiper-wrapper .slide .content_2 h3 {
   font-size: 5rem;
   color: hsl(220, 100%, 99%);
-  font-family: "raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
   text-align: justify;
 }
 .swiper-wrapper .slide .content_2 p {
@@ -427,7 +430,6 @@ a {
 
 /*=============== SMALL ABOUT SECTION ===============*/
 .about {
-  background: hsl(220, 24%, 15%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -446,13 +448,12 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 50%;
 }
 .about .section-container .box .content_1 {
   display: flex;
   flex-direction: column;
-  color: #fff;
-  margin: 50px;
+  align-items: center;
+  color: hsl(220, 68%, 97%);
 }
 .about .section-container .box .content_1 h1 {
   line-height: 1.5;
@@ -461,7 +462,7 @@ a {
   text-align: start;
 }
 .about .section-container .box .content_1 p {
-  text-align: start;
+  text-align: center;
   width: 20rem;
   font-size: 20px;
   font-weight: 500;
@@ -528,9 +529,158 @@ a {
   opacity: 2;
 }
 
+/*=============== TIMELINE ===============*/
+.timeline-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 100px 15px;
+}
+.timeline-section .long-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.timeline-section .long-line::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #d6d6d6;
+}
+.timeline-section .long-line p {
+  opacity: 0;
+}
+.timeline-section .intro-content {
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 120px;
+  width: auto;
+  margin-top: 120px;
+  padding: 15px;
+}
+.timeline-section .intro-content h2 {
+  font-size: 5rem;
+  text-align: center;
+  color: hsl(220, 68%, 97%);
+}
+.timeline-section .intro-content p {
+  font-size: 2rem;
+  line-height: 1.5;
+  padding-bottom: 50px;
+  font-weight: 500;
+  color: hsl(220, 68%, 97%);
+}
+.timeline-section .timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-section .timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #d6d6d6;
+  left: calc(50% - 1px);
+}
+.timeline-section .timeline-items .timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.timeline-section .timeline-items .timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-section .timeline-items .timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-section .timeline-items .timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+  text-align: left;
+}
+.timeline-section .timeline-items .timeline-item .timeline-content {
+  background-color: hsl(220, 100%, 99%);
+  padding: 30px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0px 0px 10px -1px #000000;
+}
+.timeline-section .timeline-items .timeline-item .timeline-content h3 {
+  font-size: 1.1rem;
+  color: hsl(204, 100%, 35%);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0 0 15px;
+}
+.timeline-section .timeline-items .timeline-item .timeline-content p {
+  color: #333;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 22px;
+}
+.timeline-section .timeline-items .timeline-item .timeline-content img {
+  margin-top: 40px;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  z-index: 8;
+}
+.timeline-section .timeline-items .timeline-item .timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: #1c448e;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+}
+.timeline-section .timeline-items .timeline-item .timeline-date {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(220, 68%, 97%);
+  margin: 6px 0 15px;
+}
+.timeline-section .last-content {
+  position: relative;
+  background-color: hsl(220, 68%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 120px 0 120px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -1px #000000;
+}
+.timeline-section .last-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: hsl(204, 100%, 35%);
+}
+.timeline-section .last-content h3 {
+  font-size: 2rem;
+  color: #3876bf;
+}
+.timeline-section .last-content p {
+  text-align: center;
+  padding: 20px 20px;
+  color: #333;
+}
+
+/*=============== TIMELINE ===============*/
 /*=============== Footer ===============*/
 .footer {
-  padding: 55px 25% 55px 25%;
+  box-shadow: 0px -2px 17px 3px rgba(0, 0, 0, 0.5);
+  padding: 55px 25% 55px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 1rem;
@@ -686,7 +836,8 @@ a {
     margin: 0;
   }
   .swiper-wrapper .slide .content_2 h3 {
-    font-size: 2.2rem;
+    align-items: center;
+    font-size: 2rem;
   }
   .about .section-container .box .content_1 {
     align-items: center;
@@ -700,6 +851,34 @@ a {
   }
 }
 /*=============== Swiper section end ===============*/
+/*=============== Timeline section start ===============*/
+@media (max-width: 767px) {
+  .timeline-section .intro-content h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .timeline-section .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-section .timeline-items .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-section .timeline-items .timeline-item:nth-child(odd),
+  .timeline-section .timeline-items .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+  .timeline-section .timeline-items .timeline-item .timeline-dot {
+    left: 0;
+  }
+  .timeline-section .last-content h1 {
+    font-size: 1.5rem;
+  }
+  .timeline-section .last-content {
+    margin: 50px 20px 0 20px;
+  }
+}
+/*=============== Timeline section end ===============*/
 /*=============== Nav section start ===============*/
 /* For large devices */
 @media screen and (min-width: 1118px) {
@@ -775,4 +954,5 @@ a {
     padding-inline: 1rem;
   }
 }
+/*=============== Nav section end ===============*/
 /*=============== Nav section start ===============*/

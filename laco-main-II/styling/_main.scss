@@ -246,8 +246,8 @@
       h3 {
         font-size: 5rem;
         color: $body-color;
-        font-family: "raleway", sans-serif;
-        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 550;
         text-align: justify;
       }
 
@@ -277,7 +277,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: .5em;
+  padding: 0.5em;
   max-width: 40ch;
   z-index: 9999;
   border: 0;
@@ -298,7 +298,6 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
-
 
   .close i {
     position: absolute;
@@ -367,7 +366,6 @@
         justify-content: center;
         transition: all 0.3s ease;
 
-
         a {
           text-decoration: none;
           color: #333;
@@ -387,7 +385,6 @@
 /*=============== SMALL ABOUT SECTION ===============*/
 
 .about {
-  background: $black-color-light;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -406,13 +403,12 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 50%;
 
       .content_1 {
         display: flex;
         flex-direction: column;
-        color: #fff;
-        margin: 50px;
+        align-items: center;
+        color: $first-color-lighten;
 
         h1 {
           line-height: 1.5;
@@ -422,7 +418,7 @@
         }
 
         p {
-          text-align: start;
+          text-align: center;
           width: 20rem;
           font-size: 20px;
           font-weight: 500;
@@ -502,9 +498,189 @@
   }
 }
 
+/*=============== TIMELINE ===============*/
+.timeline-section {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 100px 15px;
+
+  .long-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      content: "";
+      width: 80%;
+      height: 2px;
+      background-color: #d6d6d6;
+    }
+
+    p {
+      opacity: 0;
+    }
+  }
+
+  .intro-content {
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    min-height: 120px;
+    width: auto;
+    margin-top: 120px;
+    padding: 15px;
+
+    h2 {
+      font-size: 5rem;
+      text-align: center;
+      color: $first-color-lighten;
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
+      padding-bottom: 50px;
+      font-weight: 500;
+      color: $first-color-lighten;
+    }
+  }
+
+  .timeline-items {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+   
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: #d6d6d6;
+      left: calc(50% - 1px);
+    }
+
+    .timeline-item {
+      margin-bottom: 40px;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(odd) {
+        padding-right: calc(50% + 30px);
+        text-align: right;
+
+        
+      }
+
+      &:nth-child(even) {
+        padding-left: calc(50% + 30px);
+        text-align: left;
+      }
+
+      .timeline-content {
+        background-color: $body-color;
+        padding: 30px;
+        border-radius: 10px;
+        color: #333;
+        box-shadow: 0px 0px 10px -1px #000000;
+
+        h3 {
+          font-size: 1.1rem;
+          color: $background-color_2;
+          font-weight: 600;
+          text-transform: capitalize;
+          margin: 0 0 15px;
+        }
+
+        p {
+          color: #333;
+          font-weight: 300;
+          font-size: 1rem;
+          line-height: 22px;
+        }
+
+        img{
+          margin-top: 40px;
+          border-radius: 10px;
+          transition: transform .4s ease;
+          z-index: 8;
+        }
+
+
+      }
+
+      .timeline-dot {
+        height: 16px;
+        width: 16px;
+        background-color: #1c448e;
+        position: absolute;
+        left: calc(50% - 8px);
+        border-radius: 50%;
+      }
+
+      .timeline-date {
+        font-size: 20px;
+        font-weight: 600;
+        color: $first-color-lighten;
+        margin: 6px 0 15px;
+      }
+    }
+  }
+  
+  .last-content{
+    position: relative;
+    background-color: $first-color-lighten;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 120px 0 120px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px #000000;
+
+
+    h1{
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: $background-color_2;
+    }
+
+    h3{
+      font-size: 2rem;
+      color: #3876bf;
+    }
+
+    p{
+      text-align: center;
+      padding: 20px 20px;
+      color: #333;
+    }
+
+  }
+}
+/*=============== TIMELINE ===============*/
+
+
 /*=============== Footer ===============*/
 .footer {
-  padding: 55px 25% 55px 25%;
+  box-shadow: 0px -2px 17px 3px rgba(0, 0, 0, 0.5);
+  padding: 55px 25% 55px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 1rem;
@@ -681,8 +857,9 @@
     align-items: center;
     margin: 0;
   }
-  .swiper-wrapper .slide .content_2 h3 {
-    font-size: 2.2rem;
+  .swiper-wrapper .slide .content_2 h3 { 
+    align-items: center;
+    font-size: 2rem;
   }
 
   .about .section-container .box .content_1 {
@@ -697,12 +874,42 @@
   .about .section-container .box .content_1 p {
     text-align: center;
   }
-
 }
 /*=============== Swiper section end ===============*/
 
+/*=============== Timeline section start ===============*/
+@media (max-width: 767px) {
+  .timeline-section .intro-content h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
+  .timeline-section .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-section .timeline-items .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
 
+  .timeline-section .timeline-items .timeline-item:nth-child(odd),
+  .timeline-section .timeline-items .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+
+  .timeline-section .timeline-items .timeline-item .timeline-dot {
+    left: 0;
+  }
+
+  .timeline-section .last-content h1{
+    font-size: 1.5rem;
+  }
+
+  .timeline-section .last-content{
+    margin: 50px 20px 0 20px ;
+  }
+}
+/*=============== Timeline section end ===============*/
 
 /*=============== Nav section start ===============*/
 /* For large devices */
@@ -795,5 +1002,6 @@
     padding-inline: 1rem;
   }
 }
+/*=============== Nav section end ===============*/
 
 /*=============== Nav section start ===============*/

@@ -30,17 +30,3 @@
         transform: capitalize;
         color: $black-color-light;
     }
-
-// //map-get() is use to get the specific value from the map element
-// @debug map-get($colors, "purple");
-
-// //map-has-key() is used to check if the map element contains the specified value.
-// @debug map-has-key($colors, "purple");
-
-// //map-remove() is used to remove the map element from the map
-// @debug map-remove($colors, "primary");
-
-// //map-merge() is use to merge another value with the current map element
-// @debug map-merge($colors, ("pink": #ffc0cb));\
-
-/* Color Theme Swatches in Hex */

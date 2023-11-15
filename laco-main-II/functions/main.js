@@ -26,6 +26,7 @@ var swiper = new Swiper("#swiper-1", {
         clickable: true,
     },
 })
+
 /*========== Modal ==========*/
 const modal = document.querySelector("#modal");
 const openModal = document.querySelector(".open-button");
@@ -38,4 +39,6 @@ openModal.addEventListener('click', () =>{
 closeModal.addEventListener('click', () =>{
     modal.close()
 });
+
+
 

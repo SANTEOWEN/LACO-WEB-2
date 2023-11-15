@@ -63,7 +63,7 @@ textarea {
 html, body {
   scroll-behavior: smooth !important;
   font-family: "Poppins", sans-serif;
-  background: url(/assets/school_photos/blob-scatter-haikei_3.svg);
+  background: url(../blob_3.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -638,7 +638,7 @@ a {
 .timeline-section .timeline-items .timeline-item .timeline-dot {
   height: 16px;
   width: 16px;
-  background-color: #1c448e;
+  background-color: #d3b037;
   position: absolute;
   left: calc(50% - 8px);
   border-radius: 50%;

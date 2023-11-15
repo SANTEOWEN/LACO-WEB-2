@@ -203,7 +203,7 @@
                     <h3>La Consolacion College Novaliches (LCCN)</h3>
                     <p>was founded In this year, LCCN was established as an educational institution, marking the
                         beginning of its journey in providing education and academic services.</p>
-                    <img id="scale" src="/assets/school_photos/3.jpg" alt="">
+                    <img id="scale" src="assets/school_photos/3.jpg" alt="">
                 </div>
             </section>
 
@@ -214,7 +214,7 @@
                     <h3>LCCN introduced its first batch of college programs</h3>
                     <p>This marked the expansion of LCCN's educational offerings to include college-level programs,
                         providing students with opportunities for higher education.</p>
-                    <img src="/assets/school_photos/6.jpg" alt="">
+                    <img src="assets/school_photos/6.jpg" alt="">
                 </div>
             </div>
 
@@ -225,7 +225,7 @@
                     <h3>The college expanded its course offerings</h3>
                     <p>LCCN likely introduced new academic programs or expanded existing ones to cater to a wider range
                         of academic interests and career paths.</p>
-                    <img src="/assets/school_photos/4.jpg" alt="">
+                    <img src="assets/school_photos/4.jpg" alt="">
                 </div>
             </div>
 
@@ -236,7 +236,7 @@
                     <h3>LCCN celebrated its 10th anniversary</h3>
                     <p>This milestone was likely celebrated with special events and activities, reflecting on a decade
                         of educational service and achievements.</p>
-                    <img src="/assets/logo/testing_3.jpg" alt="">
+                    <img src="assets/logo/testing_3.jpg" alt="">
                 </div>
             </div>
 
@@ -247,7 +247,7 @@
                     <h3>The school initiated various community outreach programs</h3>
                     <p>LCCN may have started community engagement initiatives, demonstrating its commitment to social
                         responsibility and community development.</p>
-                    <img src="/assets/school_photos/wow.jpg" alt="">
+                    <img src="assets/school_photos/wow.jpg" alt="">
                 </div>
             </div>
 
@@ -258,7 +258,7 @@
                     <h3>LCCN underwent infrastructure improvements and expansion</h3>
                     <p>During this year, the college likely invested in upgrading its facilities and possibly expanded
                         its campus to accommodate a growing student population.</p>
-                    <img src="/assets/school_photos/wow2.jpg" alt="">
+                    <img src="assets/school_photos/wow2.jpg" alt="">
                 </div>
             </div>
 
@@ -269,7 +269,7 @@
                     <h3>The school adapted to online learning during the COVID-19 pandemic</h3>
                     <p>Like many educational institutions worldwide, LCCN likely transitioned to online learning to
                         ensure the continuity of education during the global pandemic.</p>
-                    <img src="/assets/school_photos/wow3.jpg" alt="">
+                    <img src="assets/school_photos/wow3.jpg" alt="">
                 </div>
             </div>
 
@@ -280,7 +280,7 @@
                     <h3>LCCN continued to evolve and innovate in education</h3>
                     <p>This year represents the college's ongoing commitment to providing quality education and adapting
                         to changing educational trends and needs.</p>
-                    <img src="/assets/school_photos/wow4.jpg" alt="">
+                    <img src="assets/school_photos/wow4.jpg" alt="">
                 </div>
             </div>
         </div>

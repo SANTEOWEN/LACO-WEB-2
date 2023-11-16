@@ -237,6 +237,7 @@
     background-size: cover !important;
     background-position: center !important;
 
+
     .content_2 {
       display: flex;
       flex-wrap: wrap;
@@ -722,14 +723,17 @@
     }
 
     p {
-      display: flex;
-      align-items: center;
+      text-align: center;
       font-size: 15px;
       gap: 5px;
       color: #d9d9d9;
 
       i {
         font-size: 20px;
+      }
+
+      &:hover {
+        color: #fff;
       }
     }
 

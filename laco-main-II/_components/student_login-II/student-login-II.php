@@ -23,7 +23,7 @@
 
             <!-- Login Form -->
 
-            <div class="form login">
+            <div class="form login slide-in" id="form-login">
                 <div class="logo">
                     <img src="main.png" alt="">
                 </div>
@@ -59,14 +59,16 @@
                 </form>
             </div>
 
+
+
             <!-- Registration Form -->
 
             <div class="form signup">
                 <div class="logo">
                     <img src="main.png" alt="">
                 </div>
-                
-                <form action="#">
+
+                <form action="#" id="signup-forms">
                     <div class="input-field">
                         <input type="text" placeholder="Last name" name="" id="" required>
                         <i class="uil uil-user"></i>
@@ -93,7 +95,7 @@
                     </div>
 
                     <div class="input-field">
-                        <input type="text" placeholder="Number" name="" id="" required>
+                        <input type="tel" placeholder="Number" name="" id="" required>
                         <i class="uil uil-phone icon"></i>
                     </div>
 
@@ -119,13 +121,13 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="Submit" value="Register Now" id="" required>
+                        <input type="Submit" value="Register Now" id="submit-form" required>
                     </div>
 
                     <div class="login-sign-up">
                         <span class="text">
                             Already have an account?
-                            <a href="#" class="text login-link">Login Here!</a>
+                            <a href="#form-login" class="text login-link">Login Here!</a>
                         </span>
                     </div>
 
@@ -133,6 +135,24 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal popup -->
+    <dialog class="modal" id="modal">
+        <div class="modal-content">
+            <div class="logo">
+                <i class="uil uil-check-circle"></i>
+            </div>
+            <div class="contents">
+                <h3>Congratulations, your account
+                    has been successfully created!</h3>
+
+                <div class="button-login">
+                    <a href="#form-login" onclick="closeModal()">Continue</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
 
     <script src="script.js"></script>
 </body>

@@ -717,14 +717,16 @@ a {
   color: #fff;
 }
 .footer .footer-content p {
-  display: flex;
-  align-items: center;
+  text-align: center;
   font-size: 15px;
   gap: 5px;
   color: #d9d9d9;
 }
 .footer .footer-content p i {
   font-size: 20px;
+}
+.footer .footer-content p:hover {
+  color: #fff;
 }
 .footer .footer-content .text-content {
   display: flex;

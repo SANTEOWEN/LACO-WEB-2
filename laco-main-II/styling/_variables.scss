@@ -2,6 +2,7 @@
     $header-height: 5rem;
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
+
     $background-color: hsla(202.75, 66.81%, 44.9%, 1);
     $background-color_2: hsl(204, 100%, 35%);
     $black-color-light:hsl(220, 24%, 15%);
@@ -11,6 +12,7 @@
     $title-color: hsl(220, 48%, 28%);
     $text-color: hsl(220, 12%, 45%);
     $body-color: hsl(220, 100%, 99%);
+    
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     $body-font: "Poppins", sans-serif;

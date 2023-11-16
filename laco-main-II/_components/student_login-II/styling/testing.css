@@ -150,4 +150,68 @@ body {
 .container .form .login-sign-up {
   margin-top: 20px;
   text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 425px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #3383d1;
+  overflow: hidden;
+}
+.modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal-content .logo {
+  height: 290px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal-content .logo i {
+  color: #fff;
+  font-size: 15rem;
+}
+.modal .modal-content .contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 40px;
+}
+.modal .modal-content .contents h3 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #999;
+}
+.modal .modal-content .button-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  background-color: #3383d1;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.modal .modal-content .button-login a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=testing.css.map */

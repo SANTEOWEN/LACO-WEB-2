@@ -25,10 +25,4 @@
     /*========== z index ==========*/
     $z-tooltip: 10;
     $z-fixed: 200;
-
-    /*========== MIXINS ==========*/
-    @mixin titleText($titleSize){
-        font-size: $titleSize;
-        transform: capitalize;
-        color: $black-color-light;
-    }
+    

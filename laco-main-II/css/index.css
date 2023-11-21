@@ -4,7 +4,6 @@
 /*.5rem = 8px | 1rem = 16px ...*/
 /*========== Font weight ==========*/
 /*========== z index ==========*/
-/*========== MIXINS ==========*/
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -62,6 +61,7 @@ textarea {
 
 html, body {
   scroll-behavior: smooth !important;
+  scroll-padding: 5rem;
   font-family: "Poppins", sans-serif;
   background: url(../blob_3.svg);
   background-repeat: no-repeat;
@@ -205,6 +205,7 @@ a {
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 .nav__link:hover {
   background-color: #fff;
@@ -299,7 +300,7 @@ a {
 }
 .swiper-wrapper .slide {
   display: flex;
-  height: 63rem;
+  height: 56rem;
   align-items: center;
   background-size: cover !important;
   background-position: center !important;
@@ -530,6 +531,68 @@ a {
   opacity: 2;
 }
 
+/*=============== Mission, Vision & Core values ===============*/
+.MSV-cards {
+  height: 100vh;
+  display: grid;
+  place-items: center center;
+}
+.MSV-cards .msv-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+.MSV-cards .msv-main .card {
+  background-color: hsl(204, 100%, 35%);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+.MSV-cards .msv-main .card .container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.MSV-cards .msv-main .card .container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.MSV-cards .msv-main .card .container::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+.MSV-cards .msv-main .card .details {
+  padding: 20px 10px;
+}
+.MSV-cards .msv-main .card .details h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.MSV-cards .msv-main .card .details p {
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.MSV-cards .msv-main .card1 > .container:after {
+  background-image: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+.MSV-cards .msv-main .card2 > .container:after {
+  background-image: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+.MSV-cards .msv-main .card3 > .container:after {
+  background-image: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
 /*=============== TIMELINE ===============*/
 .timeline-section {
   background-repeat: no-repeat;
@@ -677,7 +740,6 @@ a {
   color: #333;
 }
 
-/*=============== TIMELINE ===============*/
 /*=============== Footer ===============*/
 .footer {
   box-shadow: 0px -2px 17px 3px rgba(0, 0, 0, 0.5);
@@ -708,7 +770,6 @@ a {
   margin-bottom: 5px;
 }
 .footer .footer-content li a {
-  display: block;
   color: #dbe4e6;
   font-size: 15px;
   font-weight: 400;
@@ -718,7 +779,6 @@ a {
   color: #fff;
 }
 .footer .footer-content p {
-  text-align: center;
   font-size: 15px;
   gap: 5px;
   color: #d9d9d9;
@@ -739,11 +799,22 @@ a {
   color: #d6d6d6;
   font-size: 16px;
   line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-content .text-content p i {
+  vertical-align: middle;
 }
 .footer .footer-content .contact-us {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+.footer .footer-content .contact-us p {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-content .contact-us p i {
+  vertical-align: middle;
 }
 .footer .icons i {
   display: inline-block;
@@ -822,9 +893,6 @@ a {
   .footer .footer-content h4 {
     font-size: 30px;
     font-weight: 700;
-  }
-  .footer .contact-us {
-    align-items: center;
   }
 }
 /*=============== Footer media query end ===============*/

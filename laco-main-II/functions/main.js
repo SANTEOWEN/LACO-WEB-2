@@ -40,5 +40,13 @@ closeModal.addEventListener('click', () =>{
     modal.close()
 });
 
+/*========== Timeline animation ==========*/
+
+
+
+
+
+
+
 
 

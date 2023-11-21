@@ -103,7 +103,7 @@
 
                     <div class="field input">
                         <label for="password">Mobile number</label>
-                        <input type="tel" name="MobileNumber" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                        <input type="tel" name="MobileNumber" id="phone" pattern="[0-9]{11}"
                             placeholder="Format: 0000-000-000" autocomplete="off" required>
                     </div>
 

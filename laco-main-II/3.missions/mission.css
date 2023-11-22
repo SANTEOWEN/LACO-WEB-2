@@ -28,7 +28,7 @@ body {
   scroll-behavior: smooth !important;
   scroll-padding: 5rem;
   font-family: "Poppins", sans-serif;
-  background-color: hsl(220deg, 24%, 15%);
+  background-color: hsl(220deg, 20%, 18%);
   position: relative;
 }
 
@@ -286,7 +286,7 @@ img {
   grid-gap: 40px;
 }
 .MSV-cards .msv-main .card {
-  background-color: hsl(220deg, 20%, 18%);
+  background-color: hsl(220deg, 24%, 15%);
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 }

@@ -49,7 +49,7 @@ body {
   scroll-behavior: smooth !important;
   scroll-padding: 5rem;
   font-family: $body-font;
-  background-color: $black-color-light;
+  background-color: $black-color-lighten;
   position: relative;
 }
 
@@ -317,7 +317,7 @@ img {
     grid-gap: 40px;
 
     .card {
-      background-color: $black-color-lighten;
+      background-color: $black-color-light;
       border-radius: 20px;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 

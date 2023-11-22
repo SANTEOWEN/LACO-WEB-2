@@ -272,7 +272,7 @@ img {
   background: #1d232f;
   display: flex;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .wraper .tc_wrap .tabs_list {
   width: 200px;

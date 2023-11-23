@@ -15,6 +15,8 @@ const showMenu = (toggleId, navId) => {
 };
 
 showMenu('nav-toggle', 'nav-menu');
+
+
 /*=============== Data Privacy ===============*/
 //We call the tab list using the querySelector
 var tab_list = document.querySelectorAll(".tabs_list ul li");

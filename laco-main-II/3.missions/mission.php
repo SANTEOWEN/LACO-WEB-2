@@ -8,8 +8,7 @@
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="mission.css">
     <title>La Consolacion College Novaliches</title>
 </head>
 
@@ -30,7 +29,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
 
-                    <li><a href="../index.html" class="nav__link">Home</a></li>
+                    <li><a href="../index.php" class="nav__link">Home</a></li>
                     <!--=============== DROPDOWN 1 ===============-->
 
                     <li class="dropdown__item">
@@ -41,7 +40,7 @@
 
                         <ul class="dropdown__menu">
                             <li>
-                                <a href="/3.missions/mission.html" class="dropdown__link">
+                                <a href="#" class="dropdown__link">
                                     <i class="uil uil-eye"></i></i>Mission & Vission
                                 </a>
                             </li>
@@ -52,7 +51,7 @@
                             </li>
 
                             <li>
-                                <a href="/4.data_privacy/data_priv.html" class="dropdown__link">
+                                <a href="4.data_privacy/data_priv.php" class="dropdown__link">
                                     <i class="uil uil-shield-exclamation"></i>Data Privacy
                                 </a>
                             </li>
@@ -67,6 +66,11 @@
                         </div>
 
                         <ul class="dropdown__menu">
+                            <li>
+                                <a href="5.courses/courses.php" class="dropdown__link">
+                                    <i class="uil uil-list-ul"></i>Program Offerings
+                                </a>
+                            </li>
                             <li>
                                 <a href="#" class="dropdown__link">
                                     <i class="uil uil-check-square"></i>Requirements
@@ -84,63 +88,55 @@
         </div>
     </header>
 
-    <section class="courses-section">
-        <div class="head-title">
-            <h1>Most Popular Courses</h1>
+    <section class="MSV-cards">
+        <div class="MSV-header">
+            <h1>Mission, Vision & Core Values</h1>
         </div>
-        <div class="container">
-            <div class="coursesBox">
-                <div class="icon" style="--i:#4eb7ff">
-                    <i class="uil uil-book-alt"></i>
+        <div class="msv-main">
+            <div class="card card1">
+                <div class="container_1">
+                    <img src="3.jpg" alt="">
                 </div>
-                <div class="content">
-                    <h2>Education</h2>
-                    <p>The BSEd is an undergraduate teacher education program designed to equip learners with adequate
-                        and relevant competencies to teach in their chosen area of specialization/major In the secondary
-                        level</p>
-                </div>
-            </div>
-            <div class="coursesBox">
-                <div class="icon" style="--i:#fd6494">
-                    <i class="uil uil-desktop"></i>
-                </div>
-                <div class="content">
-                    <h2>Information Technology</h2>
-                    <p>Bachelor of Science in Computer Science (BSCS) is a four-year program that includes the study of
-                        computing concepts and theories, algorithmic foundations</p>
+                <div class="details">
+                    <h3>Mission Statement</h3>
+                    <p>We commit the LCC-NovaIiches to
+                        live a Christ-like life, work towards a
+                        holistic
+                        transformation of
+                        the
+                        community and render loving and
+                        enduring services as we respond to
+                        the call of the times.</p>
                 </div>
             </div>
-            <div class="coursesBox">
-                <div class="icon" style="--i:#43f390">
-                    <i class="uil uil-graph-bar"></i>
+
+            <div class="card card2">
+                <div class="container_1">
+                    <img src="4.jpg" alt="">
                 </div>
-                <div class="content">
-                    <h2>Business Administration</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro inventore magnam
-                        consequuntur ipsum dicta, molestiae distinctio dolores cumque, repellat quo explicabo iusto,
-                        numquam dolorum dignissimos voluptatibus veniam quasi vel.</P>
-                </div>
-            </div>
-            <div class="coursesBox">
-                <div class="icon" style="--i:#ffb508">
-                    <i class="uil uil-heart"></i>
-                </div>
-                <div class="content">
-                    <h2>Hospitality Management</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque temporibus nihil in
-                        dolores tenetur vel velit deleniti. A modi quas at cupiditate molestiae laborum minus corrupti
-                        sapiente eaque ipsam!</p>
+                <div class="details">
+                    <h3>Vision Statement</h3>
+                    <p>We, envision the LCC-Novaliches to
+                        become evangelizers in pursuit of
+                        Quality Catholic Education rooted to
+                        the values of our foundresses Mo.
+                        Rita and Mo. Consuelo and in the
+                        spirit of St. Augustine.</p>
                 </div>
             </div>
-            <div class="coursesBox">
-                <div class="icon" style="--i:#EA42E1">
-                    <i class="uil uil-robot"></i>
+
+            <div class="card card2">
+                <div class="container_1">
+                    <img src="5.jpg" alt="">
                 </div>
-                <div class="content">
-                    <h2>Computer Science</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque temporibus nihil in
-                        dolores tenetur vel velit deleniti. A modi quas at cupiditate molestiae laborum minus corrupti
-                        sapiente eaque ipsam!</p>
+                <div class="details">
+                    <h3>Vision Statement</h3>
+                    <p>We, envision the LCC-Novaliches to
+                        become evangelizers in pursuit of
+                        Quality Catholic Education rooted to
+                        the values of our foundresses Mo.
+                        Rita and Mo. Consuelo and in the
+                        spirit of St. Augustine.</p>
                 </div>
             </div>
         </div>
@@ -181,8 +177,7 @@
             </div>
         </div>
     </section>
-
-    <script src="courses.js"></script>
+    <script src="mission.js"></script>
 </body>
 
 </html>

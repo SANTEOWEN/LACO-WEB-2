@@ -29,7 +29,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
 
-                    <li><a href="../index.html" class="nav__link">Home</a></li>
+                    <li><a href="../index.php" class="nav__link">Home</a></li>
                     <!--=============== DROPDOWN 1 ===============-->
 
                     <li class="dropdown__item">
@@ -40,7 +40,7 @@
 
                         <ul class="dropdown__menu">
                             <li>
-                                <a href="../3.missions/mission.html" class="dropdown__link">
+                                <a href="../3.missions/mission.php" class="dropdown__link">
                                     <i class="uil uil-eye"></i></i>Mission & Vission
                                 </a>
                             </li>
@@ -67,7 +67,7 @@
 
                         <ul class="dropdown__menu">
                             <li>
-                                <a href="/5.courses/courses.html" class="dropdown__link">
+                                <a href="../5.courses/courses.php" class="dropdown__link">
                                     <i class="uil uil-list-ul"></i>Program Offerings
                                 </a>
                             </li>

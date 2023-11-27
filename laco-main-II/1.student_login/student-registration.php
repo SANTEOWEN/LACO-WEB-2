@@ -33,11 +33,12 @@
                 $Email = $_POST['Email'];
                 $MobileNumber = $_POST['MobileNumber'];
                 $Password = $_POST['Password'];
+                $Password = md5($Password);
                 $ReEnterPass = $_POST['ReEnterPass'];
 
                 //Check if the email is unique values
             
-                $verify_query = mysqli_query($con, "SELECT Email FROM users WHERE Email='$Email'");
+                $verify_query = mysqli_query($con, "SELECT Email FROM tbUser WHERE Email='$Email'");
 
                 if (mysqli_num_rows($verify_query) != 0) {
                     echo "<div class='message'>
@@ -55,7 +56,7 @@
                 } else {
 
 
-                    mysqli_query($con, "INSERT INTO users(Lastname,Firstname,Middlename,Birthday,Email,MobileNumber,Password,ReEnterPass) VALUES('$Lastname','$Firstname','$Middlename','$Birthday','$Email','$MobileNumber','$Password','$ReEnterPass')") or die("Error Occured");
+                    mysqli_query($con, "INSERT INTO tbUser(Lastname,Firstname,Middlename,Birthday,Email,MobileNumber,Password,ReEnterPass) VALUES('$Lastname','$Firstname','$Middlename','$Birthday','$Email','$MobileNumber','$Password','$ReEnterPass')") or die("Error Occured");
 
                     echo "<div class='message_1'>
                             <div class='icon'>
@@ -103,8 +104,7 @@
 
                     <div class="field input">
                         <label for="password">Mobile number</label>
-                        <input type="tel" name="MobileNumber" id="phone" pattern="[0-9]{11}"
-                            placeholder="Format: 0000-000-000" autocomplete="off" required>
+                        <input type="tel" name="MobileNumber" id="phone" pattern="[0-9]{11}" autocomplete="off" required>
                     </div>
 
                     <div class="field input">

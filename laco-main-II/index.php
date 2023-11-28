@@ -85,8 +85,7 @@
                             <li>
                                 <a href="5.courses/courses.php" class="dropdown__link">
                                     <i class="uil uil-list-ul"></i>Program Offerings
-                                </a
-                            </li>
+                                </a </li>
                             <li>
                                 <a href="#" class="dropdown__link">
                                     <i class="uil uil-check-square"></i>Requirements
@@ -99,32 +98,14 @@
                             </li>
                         </ul>
                     </li>
+
+                    <li>
+                        <a href="" class="nav__link"><i class="uil uil-user-circle users"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </header>
-
-    <!--=============== Modal ===============-->
-    <dialog class="modal" id="modal">
-        <div class="close"><i class="ri-close-line closed"></i></div>
-
-        <div class="content">
-            <div class="main-content">
-                <h2>Authorize which Account</h2>
-                <p>Choose what type of <span> Account </span> you have.</p>
-            </div>
-
-            <div class="buttons-container">
-                <div class="btn"><a href="#">TEACHER</a></div>
-                <div class="btn"><a href="1.student_login/student-login.php">STUDENT</a></div>
-                <div class="btn"><a href="#">ADMIN</a></div>
-            </div>
-
-            <p></p>
-
-        </div>
-    </dialog>
-
     <!--=============== Slider ===============-->
     <section class="slider-1">
         <div class="swiper" id="swiper-1">
@@ -135,7 +116,7 @@
                         <p><span>La Consolacion College Novaliches</span> commits to provide transformative education
                             and to instill in all the members of the Community of Friends the passion for Peace, Justice
                             and Integrity of Creation.</p>
-                        <button class="button open-button btn">Get Started!</button>
+                        <button class="button open_button btn"></a>Register Now!</button>
                     </div>
                 </section>
                 <section class="swiper-slide slide" style="background: url('assets/school_photos/3.jpg') no-repeat;">
@@ -155,8 +136,59 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
+    <!--================ Registration Modal ===============-->
+    <dialog class="modal" id="modal">
+        <div class="container">
+            <header><img src="assets/logo/main.png" alt=""></header>
+            <form action="#" class="form">
+                <div class="input-box">
+                    <label>First Name</label>
+                    <input type="text" name="Fullname" id="fullname" placeholder="Enter First Name" required>
+                </div>
+                <div class="input-box">
+                    <label>Last Name</label>
+                    <input type="text" name="Lastname" id="lastname" placeholder="Enter Last Name" required>
+                </div>
 
-    <!--=========== ==== Small about section ===============-->
+                <div class="input-box">
+                    <label>Middle Name</label>
+                    <input type="text" name="Middlename" id="middlename" placeholder="Enter Middle Name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="text" name="Email" id="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Phone Number </label>
+                    <input type="text" name="Email" id="email" placeholder="Enter Phone number" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Birthday</label>
+                    <input type="date" class="center" name="Birthday" id="birthday" placeholder="Enter Birthdate" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Passowrd</label>
+                    <input type="password" name="Password" id="password" placeholder="Enter password" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Re-enter Password</label>
+                    <input type="password" name="ReEnterPassword" id="repassword" placeholder="Re-enter Password"
+                        required>
+                </div>
+
+                <button type="submit" class="submit close_button"> Login </button>
+                <div class="links">
+                    Already have account? <a href="student-login.php">Log In Here!</a>
+                </div>
+            </form>
+        </div>
+    </dialog>
+    <!--================ Small about section ===============-->
     <section class="about">
 
         <div class="section-container">
@@ -309,6 +341,7 @@
     <section class="footer">
         <div class="footer-content">
             <h4>Quick Links</h4>
+            <li><a href="./1.student_login/student-login.php">Student Portal</a></li>
             <li><a href="#">Ask Questions</a></li>
             <li><a href="#">Send Feedback</a></li>
             <li><a href="#">Private Policy</a></li>

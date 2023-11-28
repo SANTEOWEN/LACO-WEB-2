@@ -1,7 +1,3 @@
-<?php
-session_start();
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,39 +20,6 @@ session_start();
 <body>
     <div class="container">
         <div class="box form-box">
-            <?php
-            include("php/config.php");
-            if(isset($_POST['submit'])){
-                $email = mysqli_real_escape_string($con, $_POST['email']);
-                $password = mysqli_real_escape_string($con, $_POST['password']);
-                $result = mysqli_query($con, "SELECT * FROM tbUser Where Email = '$email' AND Password = '$password'") or die("Select error");
-                $row = mysqli_fetch_assoc($result);
-
-
-                if(is_array($row) && !empty($row)){
-                   $_SESSION['valid'] = $row['Email'];
-                   $_SESSION['valid'] = $row['Password'];
-
-                } else {
-                    echo "<div class='message'>
-                            <div class='icon'>
-                            <i class='uil uil-exclamation-circle'></i>
-                            
-                            </div>
-                            <div class='content'>
-                            <p>Wrong User and Password</p>
-                            </div>
-                            <br>
-                            <a href='../1.student_login/student-login.php'><button class='btn'> Go back</button>
-                        </div>";
-                }
-                if(isset($_session['valid'])){
-                    header("Location: ../index.php");
-                }
-            } else {
-
-            ?>
-
             <header><img src="main.png" alt=""></header>
             <form action="" method="post">
                 <div class="field input">
@@ -78,7 +41,6 @@ session_start();
                 </div>
             </form>
         </div>
-        <?php } ?>
     </div>
     <script src="script.js"></script>
 </body>

@@ -26,27 +26,16 @@ var swiper = new Swiper("#swiper-1", {
         clickable: true,
     },
 })
+/*========== modal ==========*/
 
-/*========== Modal ==========*/
-const modal = document.querySelector("#modal");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".closed");
 
-openModal.addEventListener('click', () =>{
-    modal.showModal()
+const modal = document.querySelector('#modal');
+const openModal = document.querySelector('.open_button');
+const closeModal = document.querySelector('.close_button');
+
+openModal.addEventListener('click',() =>{
+    modal.showModal();
 });
-
-closeModal.addEventListener('click', () =>{
-    modal.close()
-});
-
-/*========== Timeline animation ==========*/
-
-
-
-
-
-
 
 
 

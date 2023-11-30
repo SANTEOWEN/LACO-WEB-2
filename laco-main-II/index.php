@@ -98,10 +98,6 @@
                             </li>
                         </ul>
                     </li>
-
-                    <li>
-                        <a href="" class="nav__link"><i class="uil uil-user-circle users"></i></a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -136,6 +132,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
+    
     <!--================ Registration Modal ===============-->
     <dialog class="modal" id="modal">
         <div class="container">

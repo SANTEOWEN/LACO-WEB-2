@@ -35,12 +35,14 @@
                 $Password = $_POST['Password'];
                 $Password = md5($Password);
                 $ReEnterPass = $_POST['ReEnterPass'];
+                $ReEnterPass = md5($ReEnterPass);
 
                 //Check if the email is unique values
             
                 $verify_query = mysqli_query($con, "SELECT Email FROM tbUser WHERE Email='$Email'");
 
                 if (mysqli_num_rows($verify_query) != 0) {
+
                     echo "<div class='message'>
                             <div class='icon'>
                             <i class='uil uil-exclamation-circle'></i>
@@ -53,6 +55,17 @@
                             <a href='javascript:self.history.back()'><button class='btn'> Go back</button>
                         </div>";
 
+                } elseif ($Password != $ReEnterPass) {
+                    echo "<div class='message'>
+                            <div class='icon'>
+                            <i class='uil uil-exclamation-circle'></i>
+                            </div>
+                            <div class='content'>
+                            <p>PASSWORD NOT MATCH</p>
+                            </div>
+                            <br>
+                            <a href='javascript:self.history.back()'><button class='btn'> Go back</button>
+                        </div>";
                 } else {
 
 

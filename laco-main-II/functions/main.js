@@ -29,13 +29,14 @@ var swiper = new Swiper("#swiper-1", {
 /*========== modal ==========*/
 
 
-const modal = document.querySelector('#modal');
-const openModal = document.querySelector('.open_button');
-const closeModal = document.querySelector('.close_button');
+// const modal = document.querySelector('#modal');
+// const openModal = document.querySelector('.open_button');
+// const closeModal = document.getElementById('close-mod');
 
-openModal.addEventListener('click',() =>{
-    modal.showModal();
-});
+// openModal.addEventListener('click',() =>{
+//     modal.showModal();
+// });
+
 
 
 

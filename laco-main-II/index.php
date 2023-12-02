@@ -112,7 +112,7 @@
                         <p><span>La Consolacion College Novaliches</span> commits to provide transformative education
                             and to instill in all the members of the Community of Friends the passion for Peace, Justice
                             and Integrity of Creation.</p>
-                        <button class="button open_button btn"></a>Register Now!</button>
+                        <button class="btn"> <a href="1.student_login/student-login.php">Register Now!</a></button>
                     </div>
                 </section>
                 <section class="swiper-slide slide" style="background: url('assets/school_photos/3.jpg') no-repeat;">
@@ -132,59 +132,6 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    
-    <!--================ Registration Modal ===============-->
-    <dialog class="modal" id="modal">
-        <div class="container">
-            <header><img src="assets/logo/main.png" alt=""></header>
-            <form action="#" class="form">
-                <div class="input-box">
-                    <label>First Name</label>
-                    <input type="text" name="Fullname" id="fullname" placeholder="Enter First Name" required>
-                </div>
-                <div class="input-box">
-                    <label>Last Name</label>
-                    <input type="text" name="Lastname" id="lastname" placeholder="Enter Last Name" required>
-                </div>
-
-                <div class="input-box">
-                    <label>Middle Name</label>
-                    <input type="text" name="Middlename" id="middlename" placeholder="Enter Middle Name" required>
-                </div>
-
-                <div class="input-box">
-                    <label>Email</label>
-                    <input type="text" name="Email" id="email" placeholder="Enter Email" required>
-                </div>
-
-                <div class="input-box">
-                    <label>Phone Number </label>
-                    <input type="text" name="Email" id="email" placeholder="Enter Phone number" required>
-                </div>
-
-                <div class="input-box">
-                    <label>Birthday</label>
-                    <input type="date" class="center" name="Birthday" id="birthday" placeholder="Enter Birthdate" required>
-                </div>
-
-                <div class="input-box">
-                    <label>Passowrd</label>
-                    <input type="password" name="Password" id="password" placeholder="Enter password" required>
-                </div>
-
-                <div class="input-box">
-                    <label>Re-enter Password</label>
-                    <input type="password" name="ReEnterPassword" id="repassword" placeholder="Re-enter Password"
-                        required>
-                </div>
-
-                <button type="submit" class="submit close_button"> Login </button>
-                <div class="links">
-                    Already have account? <a href="student-login.php">Log In Here!</a>
-                </div>
-            </form>
-        </div>
-    </dialog>
     <!--================ Small about section ===============-->
     <section class="about">
 

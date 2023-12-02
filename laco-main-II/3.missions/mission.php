@@ -51,7 +51,7 @@
                             </li>
 
                             <li>
-                                <a href="4.data_privacy/data_priv.php" class="dropdown__link">
+                                <a href="../4.data_privacy/data_priv.php" class="dropdown__link">
                                     <i class="uil uil-shield-exclamation"></i>Data Privacy
                                 </a>
                             </li>
@@ -67,7 +67,7 @@
 
                         <ul class="dropdown__menu">
                             <li>
-                                <a href="5.courses/courses.php" class="dropdown__link">
+                                <a href="../5.courses/courses.php" class="dropdown__link">
                                     <i class="uil uil-list-ul"></i>Program Offerings
                                 </a>
                             </li>

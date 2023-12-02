@@ -61,7 +61,7 @@ textarea {
   margin: 0;
 }
 
-html, body {
+body {
   scroll-behavior: smooth !important;
   scroll-padding: 5rem;
   font-family: "Lexend", sans-serif;
@@ -341,97 +341,6 @@ a {
 }
 
 /*=============== MODAL ===============*/
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.5em;
-  max-width: 55ch;
-  z-index: 9999;
-  border: 0;
-  border-radius: 10px;
-}
-.modal > * {
-  margin: 0 0 0.5rem 0;
-}
-.modal::backdrop {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-.modal .container {
-  position: relative;
-  max-width: 800px;
-  width: 100%;
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px 0 rgb(0, 0, 0), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
-}
-.modal .container header img {
-  position: relative;
-  display: block;
-  max-width: 600px;
-  width: 100%;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
-.modal .container .form {
-  margin-top: 5px;
-}
-.modal .container .form .input-box {
-  width: 100%;
-  margin-top: 5px;
-}
-.modal .container .form .input-box label {
-  color: #333;
-}
-.modal .container .form .input-box input {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  outline: none;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0 15px;
-  margin-top: 5px;
-}
-.modal .container .form .input-box .center {
-  padding: 10px;
-}
-.modal .container .form .column {
-  display: flex;
-  column-gap: 15px;
-}
-.modal .container .form .submit {
-  text-align: center;
-  height: 40px;
-  width: 100%;
-  background: #006bb3;
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s;
-  margin-top: 20px;
-  padding: 0 10px;
-}
-.modal .container .form .submit:hover {
-  opacity: 0.82;
-}
-.modal .container .form .links {
-  margin-top: 10px;
-}
-.modal .container .form .links a {
-  text-decoration: none;
-  color: #006bb3;
-}
-.modal .container .form .links a:hover {
-  text-decoration: underline;
-}
-
 /*=============== SMALL ABOUT SECTION ===============*/
 .about {
   display: flex;

@@ -102,7 +102,7 @@
                     <h2>Data Privacy</h2>
                 </div>
                 <div class="tabs_body">
-                    <div class="tab_item tab_item_1">
+                    <div class="tab_item" id="tab_item_1">
                         <h3>Website Privacy Statement</h3>
                         <p>La Consolacion College Novaliches (“us”, “we”, or “our”) operates the https://www.lcc.edu.ph
                             website (the “Service”) By using the Service, you agree to the collection and use of
@@ -144,7 +144,7 @@
                             modified or completely deleted from our Service. </p>
 
                     </div>
-                    <div class="tab_item tab_item_2" style="display: none;">
+                    <div class="tab_item" id="tab_item_2" style="display: none;">
                         <h3>Processing of Personal Data</h3>
                         <p>Personal Data are collected mainly directly from the applicant; from the ones they have
                             indicated on the application form, the documents/records submitted upon admission, other
@@ -180,7 +180,7 @@
                             after such period.</p>
 
                     </div>
-                    <div class="tab_item tab_item_3" style="display: none;">
+                    <div class="tab_item" id="tab_item_3" style="display: none;">
                         <h3>Inquiries & Complaints</h3>
                         <p>Every data subject has the right to reasonable access to his or her personal data being
                             processed by the personal information controller or personal information processor. Other

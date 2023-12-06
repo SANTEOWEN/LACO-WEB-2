@@ -49,7 +49,7 @@ tab_list.forEach(function(list){
         //6. Now we call the table items from the top variable 
         // We use forEach method to call all of the items inside which is the items inside
         tab_items.forEach(function(item){
-            var tab_class = item.getAttribute("class").split(" ");
+            var tab_class = item.getAttribute("id")
             console.log(tab_class);
             if(tab_class.includes(tab_data)){
                 item.style.display = "block"

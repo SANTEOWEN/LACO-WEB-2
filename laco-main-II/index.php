@@ -124,7 +124,10 @@
                 <section class="swiper-slide slide" style="background: url('assets/logo/test_1.jpg') no-repeat;">
                     <div class="content_2">
                         <h3>We Evangelize</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                        <p>we passionately share the transformative power of faith. Our mission is to spread the message
+                            of hope and love to all corners of the world. We believe in the power of spiritual growth
+                            and the positive change it can bring to individuals and communities. Join us as we embark on
+                            this journey of faith, spreading the word and making a difference in the world.</p>
                     </div>
                 </section>
 

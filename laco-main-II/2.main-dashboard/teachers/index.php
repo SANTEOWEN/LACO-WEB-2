@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="initClock()">
     <div class="wrapper">
 
         <!-- Sidebar nigga-->
@@ -125,7 +125,7 @@
 
                     <!-- miming box areas -->
                     <div class="tab_item row" id="tab_items_9">
-                        <div class="col-12 col-md-6 d-flex">
+                        <div class="col-12 col-lg-100 d-flex">
                             <div class="card flex-fill border-0 illustration">
                                 <div class="card-body p-0 d-flex flex-fill">
                                     <div class="row g-0 w-100">
@@ -137,22 +137,6 @@
                                         </div>
                                         <div class="col-6 alig-self-end text-end">
                                             <img src="cat.png" class="img-fluid illustration-img rounded" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-1">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-1"></h4>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -178,22 +162,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-2">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-2"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="tab_item row" id="tab_items_2" style="display: none;">
@@ -209,22 +177,6 @@
                                         </div>
                                         <div class="col-6 alig-self-end text-end">
                                             <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-3">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-3"></h4>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -250,22 +202,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-4">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-4"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="tab_item row" id="tab_items_4" style="display: none;">
@@ -281,22 +217,6 @@
                                         </div>
                                         <div class="col-6 alig-self-end text-end">
                                             <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-5">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-5"></h4>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -322,22 +242,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-6">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-6"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="tab_item row" id="tab_items_6" style="display: none;">
@@ -353,22 +257,6 @@
                                         </div>
                                         <div class="col-6 alig-self-end text-end">
                                             <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-7">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-7"></h4>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -394,22 +282,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-8">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-8"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="tab_item row" id="tab_items_8" style="display: none;">
@@ -430,22 +302,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-9">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-9"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
 
@@ -455,6 +311,25 @@
                     <!--Dashboard area-->
                     <!--Admin-->
                     <!-- Main -->
+                    <div class="tab_item card border-0 illustration" id="tab_items_9">
+                        <div class="card-body body-clock">
+                            <div class="datetime">
+                                <div class="date">
+                                    <span id="dayname">Day</span>,
+                                    <span id="month">Month</span>
+                                    <span id="daynum">00</span>,
+                                    <span id="year">Year</span>
+                                </div>
+                                <div class="time">
+                                    <span id="hour">00</span>:
+                                    <span id="minutes">00</span>:
+                                    <span id="seconds">00</span>
+                                    <span id="period">AM</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                     <div class="tab_item card border-0 crud-button" id="tab_items_1" style="display: none;">
                         <div class="card-header">
@@ -497,8 +372,8 @@
                                     $sql = "SELECT * FROM tbUser";
                                     $verify = mysqli_query($con, $sql);
 
-                                    if (mysqli_num_rows($verify) > 0) {
-                                        while ($row = mysqli_fetch_assoc($verify)) {
+                                    if(mysqli_num_rows($verify) > 0) {
+                                        while($row = mysqli_fetch_assoc($verify)) {
                                             ?>
                                             <tr>
                                                 <td>
@@ -554,10 +429,10 @@
                         </div>
                         <div class="card-body">
                             <?php
-                            if (isset($_GET['msg'])) {
+                            if(isset($_GET['msg'])) {
                                 $msg = $_GET['msg'];
                                 echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                ' . $msg . '
+                                '.$msg.'
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
@@ -584,8 +459,8 @@
                                     $sql = "SELECT * FROM tbUser";
                                     $verify = mysqli_query($con, $sql);
 
-                                    if (mysqli_num_rows($verify) > 0) {
-                                        while ($row = mysqli_fetch_assoc($verify)) {
+                                    if(mysqli_num_rows($verify) > 0) {
+                                        while($row = mysqli_fetch_assoc($verify)) {
                                             ?>
                                             <tr>
                                                 <td>
@@ -655,8 +530,8 @@
                                     $sql = "SELECT * FROM tbUser";
                                     $verify = mysqli_query($con, $sql);
 
-                                    if (mysqli_num_rows($verify) > 0) {
-                                        while ($row = mysqli_fetch_assoc($verify)) {
+                                    if(mysqli_num_rows($verify) > 0) {
+                                        while($row = mysqli_fetch_assoc($verify)) {
                                             ?>
                                             <tr>
                                                 <td>
@@ -722,8 +597,8 @@
                                     $sql = "SELECT * FROM tbUser";
                                     $verify = mysqli_query($con, $sql);
 
-                                    if (mysqli_num_rows($verify) > 0) {
-                                        while ($row = mysqli_fetch_assoc($verify)) {
+                                    if(mysqli_num_rows($verify) > 0) {
+                                        while($row = mysqli_fetch_assoc($verify)) {
                                             ?>
                                             <tr>
                                                 <td>
@@ -789,8 +664,8 @@
                                     $sql = "SELECT * FROM tbUser";
                                     $verify = mysqli_query($con, $sql);
 
-                                    if (mysqli_num_rows($verify) > 0) {
-                                        while ($row = mysqli_fetch_assoc($verify)) {
+                                    if(mysqli_num_rows($verify) > 0) {
+                                        while($row = mysqli_fetch_assoc($verify)) {
                                             ?>
                                             <tr>
                                                 <td>
@@ -855,8 +730,8 @@
                                     $sql = "SELECT * FROM tbUser";
                                     $verify = mysqli_query($con, $sql);
 
-                                    if (mysqli_num_rows($verify) > 0) {
-                                        while ($row = mysqli_fetch_assoc($verify)) {
+                                    if(mysqli_num_rows($verify) > 0) {
+                                        while($row = mysqli_fetch_assoc($verify)) {
                                             ?>
                                             <tr>
                                                 <td>
@@ -922,8 +797,8 @@
                                     $sql = "SELECT * FROM tbUser";
                                     $verify = mysqli_query($con, $sql);
 
-                                    if (mysqli_num_rows($verify) > 0) {
-                                        while ($row = mysqli_fetch_assoc($verify)) {
+                                    if(mysqli_num_rows($verify) > 0) {
+                                        while($row = mysqli_fetch_assoc($verify)) {
                                             ?>
                                             <tr>
                                                 <td>

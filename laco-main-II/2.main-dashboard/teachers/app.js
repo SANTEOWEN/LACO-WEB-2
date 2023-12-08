@@ -55,29 +55,3 @@ tab_list.forEach(function (list) {
 });
 
 //time lamaw
-function updateTimeAndDate(elementId){
-let time = document.getElementById(`current-time-${elementId}`);
-let date = document.getElementById(`current-date-${elementId}`);
-
-setInterval(() => {
-  let now = new Date();
-  time.innerHTML = now.toLocaleTimeString();
-  date.textContent = formatDate(now);
-}, 200);
-}
-
-for (let i = 1; i <= 9; i++) {
-  updateTimeAndDate(i);
-}
-
-/**
- * @param {Date} date
- */
-
-function formatDate(date) {
-  const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const MONTHS = ["January", "Febuary", "Marh", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-
-   return `${DAYS[date.getDay()]}, ${MONTHS[date.getMonth()]} ${date.getDate()} ${date.getFullYear()}`
-}
-

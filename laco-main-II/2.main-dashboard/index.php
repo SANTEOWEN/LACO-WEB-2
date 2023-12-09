@@ -44,11 +44,11 @@
                                     <a class="sidebar-link"><i class="uil uil-book-reader test-1"></i>Admin</a>
                                 </li>
                                 <li class="sidebar-item test_2" data-tc="tab_items_2">
-                                    <a class="sidebar-link"><i class="uil uil-user test-1"></i>Student</a>
+                                    <a class="sidebar-link"><i class="uil uil-user test-1"></i>Teachers</a>
                                 </li>
 
                                 <li class="sidebar-item test_2" data-tc="tab_items_3">
-                                    <a class="sidebar-link"><i class="uil uil-user-plus test-1"></i>Teachers</a>
+                                    <a class="sidebar-link"><i class="uil uil-user-plus test-1"></i>Student</a>
                                 </li>
                             </ul>
                         </li>
@@ -109,18 +109,17 @@
                                 <img src="mona.jpg" class="avatar img-fluid rounded" alt="">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Profile</a>
                                 <a href="#" class="dropdown-item">Logout</a>
                             </div>
                         </li>
                     </ul>
                 </div>
-
             </nav>
 
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h4>Admin Dashboard</h4>
                     </div>
 
                     <!-- miming box areas -->
@@ -160,309 +159,35 @@
                         </div>
                     </div>
 
-                    <div class="tab_item row" id="tab_items_1" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin</h4>
-                                                <p class="mb-0">Admins's Account</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img rounded" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-2">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-2"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab_item row" id="tab_items_2" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin</h4>
-                                                <p class="mb-0">Student's Accounts</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-3">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-3"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab_item row" id="tab_items_3" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin</h4>
-                                                <p class="mb-0">Teacher Accounts</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-4">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-4"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab_item row" id="tab_items_4" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin(echo adminnamehere)</h4>
-                                                <p class="mb-0">Courses</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-5">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-5"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab_item row" id="tab_items_5" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin(echo adminnamehere)</h4>
-                                                <p class="mb-0">Year Levels</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-6">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-6"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab_item row" id="tab_items_6" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin(echo adminnamehere)</h4>
-                                                <p class="mb-0">Sections</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-7">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-7"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab_item row" id="tab_items_7" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin(echo adminnamehere)</h4>
-                                                <p class="mb-0">Subjects</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-8">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-8"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab_item row" id="tab_items_8" style="display: none;">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin(echo adminnamehere)</h4>
-                                                <p class="mb-0">Grades</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 alig-self-end text-end">
-                                            <img src="cat.png" class="img-fluid illustration-img" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h1 id="current-time-9">
-                                                12:00:00
-                                            </h1>
-                                            <div class="qoutes">
-                                                <h4 id="current-date-9"></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
                     <!--Dashboard area-->
                     <!--Admin-->
                     <!-- Main -->
-
                     <div class="tab_item card border-0 crud-button" id="tab_items_1" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title d-flex fs-3">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Admin Accounts
-                            </h5>
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">New Admin</a>
+                            </h5>
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -471,12 +196,10 @@
                                 <thead class="table-dark">
                                     <tr>
                                         <th scope="col">ID</th>
-                                        <th scope="col">Last Name</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Middle Name</th>
+                                        <th scope="col">Name</th>
                                         <th scope="col">DOB</th>
                                         <th scope="col">Email</th>
-                                        <th scope="col">Number</th>
+                                        <th scope="col">Mobile Number</th>
                                         <th scope="col">Action</th>
 
                                     </tr>
@@ -494,7 +217,7 @@
                                     <!-- H>eres how u fetch data from database -->
                                     <?php
                                     include("php/config.php");
-                                    $sql = "SELECT * FROM tbUser";
+                                    $sql = "SELECT * FROM tbUser where type='admin'";
                                     $verify = mysqli_query($con, $sql);
 
                                     if (mysqli_num_rows($verify) > 0) {
@@ -502,25 +225,19 @@
                                             ?>
                                             <tr>
                                                 <td>
-                                                    <?php echo $row['Id'] ?>
+                                                    <?php echo $row['id'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Lastname'] ?>
+                                                    <?php echo $row['fullname'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Firstname'] ?>
+                                                    <?php echo $row['birthday'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Middlename'] ?>
+                                                    <?php echo $row['email'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Birthday'] ?>
-                                                </td>
-                                                <td>
-                                                    <?php echo $row['Email'] ?>
-                                                </td>
-                                                <td>
-                                                    <?php echo $row['Email'] ?>
+                                                    <?php echo $row['mobilenumber'] ?>
                                                 </td>
                                                 <td>
                                                     <a href="remove.php" class="link-danger"><i
@@ -544,13 +261,10 @@
                     <!--Students-->
                     <div class="tab_item card border-0" id="tab_items_2" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Students Accounts
-                            </h5>
-
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">New Stduents</a>
-                            </div>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <?php
@@ -568,11 +282,10 @@
                                 <thead class="table-dark">
                                     <tr>
                                         <th scope="col">ID</th>
-                                        <th scope="col">Last Name</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Middle Name</th>
+                                        <th scope="col">Name</th>
                                         <th scope="col">DOB</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Mobile Number</th>
                                         <th scope="col">Action</th>
 
                                     </tr>
@@ -581,7 +294,7 @@
                                     <!-- old example -->
                                     <?php
                                     include("php/config.php");
-                                    $sql = "SELECT * FROM tbUser";
+                                    $sql = "SELECT * FROM tbUser where type='teacher'";
                                     $verify = mysqli_query($con, $sql);
 
                                     if (mysqli_num_rows($verify) > 0) {
@@ -589,22 +302,19 @@
                                             ?>
                                             <tr>
                                                 <td>
-                                                    <?php echo $row['Id'] ?>
+                                                    <?php echo $row['id'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Lastname'] ?>
+                                                    <?php echo $row['fullname'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Firstname'] ?>
+                                                    <?php echo $row['birthday'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Middlename'] ?>
+                                                    <?php echo $row['email'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Birthday'] ?>
-                                                </td>
-                                                <td>
-                                                    <?php echo $row['Email'] ?>
+                                                    <?php echo $row['mobilenumber'] ?>
                                                 </td>
                                                 <td>
                                                     <a href="remove.php" class="link-danger"><i
@@ -618,6 +328,7 @@
 
 
                                     ?>
+
                                     <!-- Heres how u fetch data from database -->
 
                                 </tbody>
@@ -628,23 +339,20 @@
                     <!--Teachers-->
                     <div class="tab_item card border-0" id="tab_items_3" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Teacher Accounts
-                            </h5>
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">New Teacher</a>
-                            </div>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover text-center">
                                 <thead class="table-dark">
                                     <tr>
                                         <th scope="col">ID</th>
-                                        <th scope="col">Last Name</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Middle Name</th>
+                                        <th scope="col">Name</th>
                                         <th scope="col">DOB</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Mobile Number</th>
                                         <th scope="col">Action</th>
 
                                     </tr>
@@ -652,7 +360,7 @@
                                 <tbody>
                                     <?php
                                     include("php/config.php");
-                                    $sql = "SELECT * FROM tbUser";
+                                    $sql = "SELECT * FROM tbUser where type='student'";
                                     $verify = mysqli_query($con, $sql);
 
                                     if (mysqli_num_rows($verify) > 0) {
@@ -660,22 +368,19 @@
                                             ?>
                                             <tr>
                                                 <td>
-                                                    <?php echo $row['Id'] ?>
+                                                    <?php echo $row['id'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Lastname'] ?>
+                                                    <?php echo $row['fullname'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Firstname'] ?>
+                                                    <?php echo $row['birthday'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Middlename'] ?>
+                                                    <?php echo $row['email'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php echo $row['Birthday'] ?>
-                                                </td>
-                                                <td>
-                                                    <?php echo $row['Email'] ?>
+                                                    <?php echo $row['mobilenumber'] ?>
                                                 </td>
                                                 <td>
                                                     <a href="remove.php" class="link-danger"><i
@@ -697,12 +402,10 @@
                     <!-- Course -->
                     <div class="tab_item card border-0" id="tab_items_4" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Courses
-                            </h5>
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">Add Course</a>
-                            </div>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover text-center">
@@ -764,12 +467,10 @@
                     <!-- Year-->
                     <div class="tab_item card border-0" id="tab_items_5" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Year
-                            </h5>
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">Add Year</a>
-                            </div>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover text-center">
@@ -830,12 +531,10 @@
                     <!-- Section -->
                     <div class="tab_item card border-0" id="tab_items_6" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Section's
-                            </h5>
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">Add Section</a>
-                            </div>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover text-center">
@@ -897,12 +596,10 @@
                     <!-- Subjects -->
                     <div class="tab_item card border-0" id="tab_items_7" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Subjects
-                            </h5>
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">Add Subjects</a>
-                            </div>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover text-center">
@@ -964,12 +661,10 @@
                     <!-- Grades -->
                     <div class="tab_item card border-0" id="tab_items_8" style="display: none;">
                         <div class="card-header">
-                            <h5 class="card-title">
+                            <h5 class="card-title d-flex justify-content-between fs-3">
                                 Grades
-                            </h5>
-                            <div class="p-2 d-flex w-100 justify-content-start">
                                 <a href="add.php" class="btn btn-primary" data-crud="data-crud-1">Add Grades</a>
-                            </div>
+                            </h5>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover text-center">
@@ -1000,9 +695,6 @@
                     </div>
                 </div>
             </main>
-
-
-            <!-- darkmode nigger -->
 
             <footer class="footer">
                 <div class="container-fluid">

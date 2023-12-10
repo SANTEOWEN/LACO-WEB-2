@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>La Consolacion College Novaliches</title>
 </head>
 
 <body>
@@ -723,7 +723,7 @@
 
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -24,22 +24,22 @@
 
             <?php
 
-            include("php/config.php");
+            include("../config/config.php");
             if (isset($_POST['submit'])) {
-                $Lastname = $_POST['Lastname'];
-                $Firstname = $_POST['Firstname'];
-                $Middlename = $_POST['Middlename'];
-                $Birthday = $_POST['Birthday'];
-                $Email = $_POST['Email'];
-                $MobileNumber = $_POST['MobileNumber'];
-                $Password = $_POST['Password'];
-                $Password = md5($Password);
-                $ReEnterPass = $_POST['ReEnterPass'];
-                $ReEnterPass = md5($ReEnterPass);
+                $lname = $_POST['Lastname'];
+                $fname = $_POST['Firstname'];
+                $mname = $_POST['Middlename'];
+                $birthday = $_POST['Birthday'];
+                $email = $_POST['Email'];
+                $mobilenumber = $_POST['MobileNumber'];
+                $pass = $_POST['Password'];
+                $Password = md5($pass);
+                $rePass = $_POST['ReEnterPass'];
+                $fullname = $fname.' '.$lname;
 
                 //Check if the email is unique values
             
-                $verify_query = mysqli_query($con, "SELECT Email FROM tbUser WHERE Email='$Email'");
+                $verify_query = mysqli_query($con, "SELECT Email FROM tbusers WHERE Email='$email'");
 
                 if (mysqli_num_rows($verify_query) != 0) {
 
@@ -55,7 +55,7 @@
                             <a href='javascript:self.history.back()'><button class='btn'> Go back</button>
                         </div>";
 
-                } elseif ($Password != $ReEnterPass) {
+                } elseif ($pass != $rePass) {
                     echo "<div class='message'>
                             <div class='icon'>
                             <i class='uil uil-exclamation-circle'></i>
@@ -69,7 +69,7 @@
                 } else {
 
 
-                    mysqli_query($con, "INSERT INTO tbUser(Lastname,Firstname,Middlename,Birthday,Email,MobileNumber,Password,ReEnterPass) VALUES('$Lastname','$Firstname','$Middlename','$Birthday','$Email','$MobileNumber','$Password','$ReEnterPass')") or die("Error Occured");
+                    mysqli_query($con, "INSERT INTO tbusers(lname,fname,mname,birthday,email,mobilenumber,password,fullname) VALUES('$lname','$fname','$mname','$birthday','$email','$mobilenumber','$Password','$fullname')") or die("Error Occured");
 
                     echo "<div class='message_1'>
                             <div class='icon'>

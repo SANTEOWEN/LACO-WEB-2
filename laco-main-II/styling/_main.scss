@@ -7,7 +7,7 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 .container {
-  max-width: 1725px;
+  max-width: 1500px;
   margin-inline: 1.5rem;
 }
 
@@ -57,10 +57,10 @@
 }
 
 .nav__logo {
+  padding: 15px;
   display: inline-flex;
   align-items: center;
   width: 250px;
-  height: auto;
 }
 
 .nav__toggle {
@@ -235,42 +235,90 @@
   margin-top: 5rem;
   .slide {
     display: flex;
-    height: 56rem;
-    align-items: center;
+    height: 65rem;
     background-size: cover !important;
     background-position: center !important;
+    gap: 20px;
+  }
 
-    .content_2 {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      margin-left: 40px;
-      max-width: 58rem;
-      height: 100%;
+  .content_1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
 
-      h3 {
-        font-size: 5rem;
-        color: $body-color;
-        font-weight: 550;
-        text-align: justify;
+    h6 {
+      font-size: 25px;
+      color: $body-color;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-size: 40px;
+      color: $body-color;
+      font-weight: 600;
+
+      em {
+        color: $background-color_2;
       }
+    }
 
-      p {
-        font-size: 1rem;
-        line-height: 1;
-        color: #d9d9d9;
-        padding: 1rem 0;
-      }
+    p {
+      color: $body-color;
+      font-size: 18px;
+    }
+  }
 
-      span {
-        color: #3876bf;
-        font-weight: 500;
-      }
+  .content_2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 50px;
 
-      a {
-        cursor: pointer;
-      }
+    h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: $body-color;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 100;
+      color: $body-color;
+    }
+    span {
+      color: $background-color_2;
+    }
+  }
+
+  .content_3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    max-width: 500px;
+    padding: 20px;
+    margin-left: 50px;
+    padding: 10px;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: $body-color;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 100;
+      color: $body-color;
+    }
+    span {
+      color: $background-color_2;
     }
   }
 }
@@ -344,6 +392,7 @@
       display: flex;
       flex-wrap: wrap;
       padding: 2rem;
+      overflow: hidden;
 
       .slider-wrapper {
         position: relative;
@@ -386,6 +435,21 @@
           &:hover {
             opacity: 2;
           }
+        }
+      }
+
+      #image-track {
+        display: flex;
+        gap: 6.6vmin;
+        transform: translate(0%, 0%);
+
+
+        > .image {
+          border-radius: 10px;
+          width: 40vmin;
+          height: 56vmin;
+          object-fit: cover;
+          object-position: center;
         }
       }
     }
@@ -838,12 +902,12 @@
     height: 37rem;
   }
 
-  .swiper-wrapper .slide .content_2 {
+  .swiper-wrapper .slide .content_1 {
     text-align: center;
     align-items: center;
     margin: 0;
   }
-  .swiper-wrapper .slide .content_2 h3 {
+  .swiper-wrapper .slide .content_1 h3 {
     align-items: center;
     font-size: 2rem;
   }

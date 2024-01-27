@@ -46,12 +46,6 @@
                             </li>
                             <li>
                                 <a href="#" class="dropdown__link">
-                                    <i class="uil uil-book-open"></i>Philosopy of Education
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown__link">
                                     <i class="uil uil-shield-exclamation"></i>Data Privacy
                                 </a>
                             </li>
@@ -69,16 +63,6 @@
                             <li>
                                 <a href="../5.courses/courses.php" class="dropdown__link">
                                     <i class="uil uil-list-ul"></i>Program Offerings
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="uil uil-check-square"></i>Requirements
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="uil uil-clipboard-notes"></i>Enrollment
                                 </a>
                             </li>
                         </ul>

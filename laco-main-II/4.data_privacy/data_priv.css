@@ -283,7 +283,7 @@ img {
   padding: 70px 20px;
   text-align: right;
 }
-.wraper .tc_wrap .tabs_list ul li {
+.wraper .tc_wrap .tabs_list ul sidebar-list li {
   color: #fff;
   padding: 10px 0;
   position: relative;
@@ -292,7 +292,7 @@ img {
   font-weight: 400;
   transition: all 0.5 ease;
 }
-.wraper .tc_wrap .tabs_list ul li::before {
+.wraper .tc_wrap .tabs_list ul sidebar-list li::before {
   content: "";
   position: absolute;
   top: 0;
@@ -303,7 +303,7 @@ img {
   opacity: 0;
   transition: all 0.5 ease;
 }
-.wraper .tc_wrap .tabs_list ul li:hover {
+.wraper .tc_wrap .tabs_list ul sidebar-list li:hover {
   color: #0052ff;
 }
 .wraper .tc_wrap .tabs_list ul li.active {

@@ -46,35 +46,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="uil uil-book-open"></i>Philosopy of Education
-                                </a>
-                            </li>
-
-                            <li>
                                 <a href="../4.data_privacy/data_priv.php" class="dropdown__link">
                                     <i class="uil uil-shield-exclamation"></i>Data Privacy
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!--=============== DROPDOWN 2 ===============-->
-
-                    <li class="dropdown__item">
-                        <div class="nav__link">
-                            Admissions<i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="uil uil-check-square"></i>Requirements
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    <i class="uil uil-clipboard-notes"></i>Enrollment
                                 </a>
                             </li>
                         </ul>
